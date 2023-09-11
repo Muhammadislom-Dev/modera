@@ -7,7 +7,11 @@ function Company() {
     <div className={styles.company}>
       <div className="container">
         <div className={styles.companyList}>
-          <img src={Tower} alt="Modera Tower" className={styles.companyImage} />
+          <img
+            src={Tower}
+            alt="Modera Tower"
+            className={styles.companyImage}
+          />
           <p className={styles.companyText}>
             Modera Towers is a multifunctional complex that combines residential
             real estate, a business center, a hotel, commercial space and

@@ -34,15 +34,17 @@ a {
 ::-webkit-scrollbar {
   width: 0px;
 }
-
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: #ddf8f0;
+::-webkit-scrollbar {
+  height: 0px;
+  border-radius: 54px;
 }
-
+::-webkit-scrollbar-track {
+  background: #fff;
+  overflow-x: scroll;
+}
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: #8062d6;
+  background: #fce8bd !important;
+  border-radius: 54px;
 }
 
 input::-webkit-outer-spin-button,
