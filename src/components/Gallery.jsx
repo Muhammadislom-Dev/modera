@@ -6,12 +6,14 @@ import Image3 from "../assets/img3.png";
 import Image4 from "../assets/img4.png";
 import Image5 from "../assets/img5.png";
 import Image6 from "../assets/img6.png";
+import { useTranslation } from "react-i18next";
 
 function Gallery() {
+  const { t } = useTranslation();
   return (
     <div className={styles.gallery}>
       <div className="container">
-        <h1 className={styles.galleryName}>OFFERS</h1>
+        <h1 className={styles.galleryName}>{t("offers")}</h1>
         <div className={styles.galleryList}>
           <img
             src={Image1}

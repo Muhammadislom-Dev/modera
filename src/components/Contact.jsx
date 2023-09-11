@@ -7,13 +7,15 @@ import Facebook from "../assets/phone.svg";
 import Instagram from "../assets/instagram.svg";
 import Telegram from "../assets/telegram.svg";
 import Location from "../assets/location.svg";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t } = useTranslation();
   return (
     <>
       <div className={styles.contact}>
         <div className="container">
-          <h2 className={styles.contactName}>Contacts</h2>
+          <h2 className={styles.contactName}>{t("Contacts")}</h2>
           <img src={MenuLogo} alt="Logo" className={styles.menuLogo} />
           <div className={styles.moderaItem}>
             <img
@@ -23,7 +25,7 @@ function Contact() {
             />
           </div>
           <div className={styles.moderaList}>
-            <a href="#" className="moderaLink">
+            <a href="tel:+998940007777" className="moderaLink">
               <img src={Phone} alt="Phone" className="modera-icon" />
             </a>
             <a

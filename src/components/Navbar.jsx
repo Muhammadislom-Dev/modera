@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./Gallery.module.css";
 import Logo from "../assets/logo.png";
 import twodote from "../assets/twodote.svg";
+import { useTranslation } from "react-i18next";
 
 function Navbar({ setOpen, open }) {
+  const { t } = useTranslation();
   const handleOpen = () => {
     setOpen(true);
   };
@@ -24,12 +26,12 @@ function Navbar({ setOpen, open }) {
             {/* <Language /> */}
             {open === false ? (
               <button onClick={handleOpen} className="navbarButton">
-                <h4>MENU</h4>
+                <h4>{t("menu")}</h4>
                 <img src={twodote} alt="" className="navbarIcon" />
               </button>
             ) : (
               <button onClick={handleClose} className="navbarButton">
-                <h4>Close</h4>
+                <h4>{t("close")}</h4>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="49"
