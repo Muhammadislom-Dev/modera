@@ -13,26 +13,45 @@ import HeaderModal from "./components/HeaderModal";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import LayoutAbout from "./pages/Layout";
 
 function App() {
   const [open, setOpen] = useState(false);
   return (
     <div className="App">
       <ToastContainer />
-      {open === false ? (
-        <Header open={open} setOpen={setOpen} />
-      ) : (
-        <HeaderModal />
-      )}
-      {open === false ? <HeaderForm /> : ""}
-      <Section />
-      <Tower />
-      <Busines />
-      <Layouts />
-      <Gallery />
-      <Company />
-      <Partner />
-      <Contact />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              {open === false ? (
+                <Header open={open} setOpen={setOpen} />
+              ) : (
+                <HeaderModal />
+              )}
+              {open === false ? <HeaderForm /> : ""}
+              <Section />
+              <Tower />
+              <Busines />
+              <Layouts />
+              <Gallery />
+              <Company />
+              <Partner />
+              <Contact />
+            </>
+          }
+        />
+        <Route
+          path="/layout"
+          element={
+            <>
+              <LayoutAbout />
+            </>
+          }
+        />
+      </Routes>
     </div>
   );
 }

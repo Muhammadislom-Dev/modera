@@ -1,0 +1,153 @@
+.navbar {
+  background: #40128b;
+}
+.about {
+  border-radius: 0px 0px 90px 90px;
+  background-color: #8062d6;
+  padding: 90px 0;
+}
+
+.aboutLeft {
+  border-radius: 0px 80px;
+  background: #fff;
+  width: 500px;
+  height: 580px;
+  box-shadow: 11px 11px 24px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px;
+}
+
+.aboutTop {
+  background: #ffd2d7;
+  width: 560px;
+  height: 300px;
+  padding: 30px;
+}
+.aboutList {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutTop p {
+  color: #40128b;
+  font-family: Vocal;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 92.5%;
+}
+.aboutTop span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.aboutTop h3 {
+  color: #40128b;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Vocal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 92.5%;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.aboutBottom {
+  border-radius: 30px;
+  background: #ffd2d7;
+  width: 475.562px;
+  height: 263px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.aboutItem {
+  border-radius: 0px 20px;
+  background: #fff;
+  box-shadow: 11px 11px 24px 0px rgba(0, 0, 0, 0.25);
+  width: 193.365px;
+  height: 193.365px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.aboutIcon {
+  width: 159px;
+  height: 159px;
+}
+
+.form {
+  padding: 50px 0;
+}
+
+.form input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid #8062d6;
+  padding: 8px 12px;
+  color: #40128b;
+  font-family: Vocal;
+  font-size: 36px;
+  margin: 25px 0;
+}
+
+.form input::placeholder {
+  color: #ffd2d7;
+  font-family: Vocal;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 92.5%;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  width: 837.5px;
+  margin: 25px auto;
+}
+
+.form button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.bottom {
+  background: #40128b;
+  padding: 27px 0;
+}
+
+.bottom a {
+  color: #fff;
+  font-family: Vocal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 92.5%;
+}
+
+.bottomList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+}
