@@ -166,7 +166,7 @@
 .galleryName {
   color: #8062d6;
   font-family: Vocal;
-  font-size: 200px;
+  font-size: 150px;
   font-style: normal;
   font-weight: 700;
   line-height: 92.5%;
@@ -248,7 +248,6 @@
   text-transform: uppercase;
   padding-bottom: 60px;
 }
-
 
 .moderaItem {
   border-radius: 53px;

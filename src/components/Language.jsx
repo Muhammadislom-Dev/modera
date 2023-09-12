@@ -10,14 +10,14 @@ function Language() {
   const { i18n } = useTranslation();
   const initialLanguage =
     typeof window !== "undefined"
-      ? localStorage.getItem("i18nextLng") || "en"
+      ? localStorage.getItem("i18nextLngOne") || "en"
       : "en";
   const [selectedLanguage, setSelectedLanguage] = useState(initialLanguage);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       i18n.changeLanguage(selectedLanguage);
-      localStorage.setItem("i18nextLng", selectedLanguage);
+      localStorage.setItem("i18nextLngOne", selectedLanguage);
     }
   }, [selectedLanguage, i18n]);
 
@@ -32,17 +32,17 @@ function Language() {
         <div className="custom-dropdown-menu">
           <div
             className="custom-dropdown-item"
-            onClick={() => onChangeLanguage("UZ")}>
+            onClick={() => onChangeLanguage("uz")}>
             UZ
           </div>
           <div
             className="custom-dropdown-item"
-            onClick={() => onChangeLanguage("RU")}>
+            onClick={() => onChangeLanguage("ru")}>
             RU
           </div>
           <div
             className="custom-dropdown-item"
-            onClick={() => onChangeLanguage("ENG")}>
+            onClick={() => onChangeLanguage("en")}>
             ENG
           </div>
         </div>
