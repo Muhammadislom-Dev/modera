@@ -7,7 +7,7 @@ function Company() {
   const { t } = useTranslation();
   return (
     <div className={styles.company}>
-      <div className="container">
+      <div className="container container-fluid">
         <div className={styles.companyList}>
           <img src={Tower} alt="Modera Tower" className={styles.companyImage} />
           <p className={styles.companyText}>{t("companyText")}</p>

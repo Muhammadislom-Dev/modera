@@ -31,26 +31,26 @@ function App() {
               ) : (
                 <HeaderModal />
               )}
-              {open === false ? <HeaderForm /> : ""}
-              <Section />
-              <Tower />
-              <Busines />
+              {/* {open === false ? <HeaderForm /> : ""} */}
+              {/* <Section /> */}
+              {/* <Tower /> */}
+              {/* <Busines /> */}
               <Layouts />
               <Gallery />
-              <Company />
+              {/* <Company /> */}
               <Partner />
               <Contact />
             </>
           }
         />
-        <Route
+        {/* <Route
           path="/layout"
           element={
             <>
               <LayoutAbout />
             </>
           }
-        />
+        /> */}
       </Routes>
     </div>
   );
