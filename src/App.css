@@ -1,0 +1,89 @@
+.moderaList {
+  position: absolute;
+  right: 0;
+  top: 36%;
+  border-radius: 50px 0px 0px 50px;
+  background: #ffd2d7;
+  padding: 40px 25px;
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  align-items: center;
+  transition: 0.3s all ease-in-out;
+}
+.contactImage {
+  border-radius: 53px;
+  width: 640px;
+  height: 580px;
+}
+
+.moderaList:hover {
+  transform: translateX(50px);
+  width: 430px;
+}
+
+.moderaLinks {
+  display: none;
+}
+
+.moderaLinks {
+  margin-left: -40px;
+}
+
+.moderaList:hover .moderaLink {
+  display: none;
+}
+
+.moderaList:hover .moderaLinks {
+  display: block;
+}
+
+.moderaList:hover .Gallery_moderaItem__nSLEL {
+  left: 20% !important;
+}
+
+.custom-dropdown-toggle {
+  border-radius: 50px;
+  border: 1px solid #ffd2d7 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: Vocal;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 290;
+  line-height: normal;
+  width: 58px;
+  height: 30px;
+}
+.custom-dropdown-menu {
+  position: absolute;
+  top: 8.7%;
+  margin-left: 3px;
+  border-radius: 8px;
+  background-color: #ffd2d7;
+}
+
+.custom-dropdown-item {
+  color: #40128b;
+  font-family: Vocal;
+  font-size: 15px;
+  font-style: normal;
+  cursor: pointer;
+  padding: 5px 8px;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  transition: 0.3s all ease-in-out;
+}
+.custom-dropdown-item:hover {
+  background-color: #40128b;
+  color: #ffd2d7;
+}

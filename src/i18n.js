@@ -1,31 +1,21 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 
+import resources from "./locales";
+
+const supportedLngs = ["uz", "ru", "en"];
 i18n
-  .use(initReactI18next) // for React
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
-    resources: {
-      en: {
-        translation: {
-          // English translations here
-        },
-      },
-      ru: {
-        translation: {
-          // Russian translations here
-        },
-      },
-      uz: {
-        translation: {
-          // Uzbek translations here
-        },
-      },
-    },
-    lng: "en", // Default language
-    fallbackLng: "en", // Fallback language
+    debug: true,
+    fallbackLng: "uz",
+    supportedLngs,
     interpolation: {
-      escapeValue: false, // React already escapes values
+      escapeValue: false,
     },
+    resources,
   });
 
 export default i18n;

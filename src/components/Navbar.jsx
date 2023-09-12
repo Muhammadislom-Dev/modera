@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Gallery.module.css";
 import Logo from "../assets/logo.png";
 import twodote from "../assets/twodote.svg";
 import { useTranslation } from "react-i18next";
+import Language from "./Language";
 
 function Navbar({ setOpen, open }) {
+  
   const { t } = useTranslation();
   const handleOpen = () => {
     setOpen(true);
@@ -23,7 +25,7 @@ function Navbar({ setOpen, open }) {
             <a href="tel:+998940007777" className={styles.navbarLink}>
               +99894 000 7777
             </a>
-            {/* <Language /> */}
+            <Language />
             {open === false ? (
               <button onClick={handleOpen} className="navbarButton">
                 <h4>{t("menu")}</h4>
