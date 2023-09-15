@@ -2,29 +2,35 @@ import React from "react";
 import styles from "./Gallery.module.css";
 import { Link } from "react-router-dom";
 import Layer from "../assets/layer.png";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { useTranslation } from "react-i18next";
 
 function Layouts() {
+  const [t, i18next] = useTranslation();
+  const [category, setCategory] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://modera.dipsag.uz/category/")
+      .then((res) => setCategory(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className={styles.layouts}>
       <div className="container container-fluid">
         <h2 className={styles.layoutName}>Layouts</h2>
         <div className={styles.layoutsList}>
           <div className={styles.layoutsItem}>
-            <Link className={styles.layoutsLink} to="/layout">
-              Penthouses and terrace
-            </Link>
-            <Link className={styles.layoutsLink} to="/layout">
-              Lounge area and yard
-            </Link>
-            <Link className={styles.layoutsLink} to="/layout">
-              Bussiness center
-            </Link>
-            <Link className={styles.layoutsLink} to="/layout">
-              Comercial zone
-            </Link>
-            <Link className={styles.layoutsLink} to="/layout">
-              Apartment
-            </Link>
+            {category?.map((evt) => (
+              <Link
+                key={evt.id}
+                className={styles.layoutsLink}
+                to={`/layout/${evt?.id}`}>
+                {evt[`name_${i18next.language}`]}
+              </Link>
+            ))}
           </div>
           <img src={Layer} alt="" className={styles.layoutsImage} />
         </div>

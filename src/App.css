@@ -12,6 +12,61 @@
   align-items: center;
   transition: 0.3s all ease-in-out;
 }
+
+.layout-item {
+  width: 40% !important;
+}
+
+.layout-list {
+  background: #8062d6;
+  padding: 60px 0;
+}
+
+.layout-list-name {
+  color: #fff;
+  text-align: right;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Vocal;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 92.5%;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.layout-list-span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Vocal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 92.5%;
+  margin: 10px 0;
+}
+
+.layout-list-text{
+  padding-left: 85px;
+}
+
+.layout-top {
+  border-radius: 0px 80px;
+  background: #fff;
+  box-shadow: 11px 11px 24px 0px rgba(0, 0, 0, 0.25);
+  width: 442px;
+  height: 442px;
+  padding: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .contactImage {
   border-radius: 53px;
   width: 640px;
@@ -282,31 +337,32 @@
   }
   .moderaList img {
     width: 30px !important;
-    height: 30px !important; 
+    height: 30px !important;
   }
   .moderaList svg {
     width: 30px !important;
     height: 30px !important;
   }
-  .moderaList{
+  .moderaList {
     top: 70% !important;
     gap: 10px !important;
     width: 60px !important;
     padding: 20px 10px !important;
   }
-  .Gallery_moderaItem__nSLEL{
+  .Gallery_moderaItem__nSLEL {
     width: 90% !important;
     height: 350px !important;
     left: 2% !important;
   }
-  .contactImage{
+  .contactImage {
     width: 98% !important;
     height: 330px !important;
   }
-  .Gallery_galleryName__nShAc, .Gallery_contactName__BO1Pi{
+  .Gallery_galleryName__nShAc,
+  .Gallery_contactName__BO1Pi {
     font-size: 40px !important;
   }
-  .custom-dropdown-menu{
+  .custom-dropdown-menu {
     top: 5.5% !important;
   }
 }

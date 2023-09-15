@@ -15,6 +15,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import LayoutAbout from "./pages/Layout";
+import LayoutList from "./pages/LayoutList/LayoutList";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -44,7 +45,15 @@ function App() {
           }
         />
         <Route
-          path="/layout"
+          path="/layout/:id"
+          element={
+            <>
+              <LayoutList />
+            </>
+          }
+        />
+        <Route
+          path="/layout-about/:id"
           element={
             <>
               <LayoutAbout />
