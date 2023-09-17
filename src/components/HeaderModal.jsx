@@ -16,11 +16,11 @@ function HeaderModal() {
           <div className={styles.headerModalItem}>
             <h4>{t("menu")}</h4>
             <div className={styles.headerModalTop}>
-              <a href="#">About</a>
-              <a href="#">Layouts</a>
-              <a href="#">We offer</a>
-              <a href="#">Specification</a>
-              <a href="#">Get in touch</a>
+              <a href="#">{t("hello1")}</a>
+              <a href="#">{t("hello2")}</a>
+              <a href="#">{t("hello3")}</a>
+              <a href="#">{t("hello4")}</a>
+              <a href="#">{t("hello5")}</a>
             </div>
           </div>
         </div>

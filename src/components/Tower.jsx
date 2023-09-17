@@ -1,44 +1,62 @@
 import React from "react";
 import styles from "./Gallery.module.css";
 import TowerImage from "../assets/tower (1).png";
+import { Fade } from "react-reveal";
+import { t } from "i18next";
 
 function Tower() {
   return (
     <div className={styles.tower}>
       <div style={{ display: "flex" }} className="container">
         <div className={styles.towerList}>
-          <div className={styles.towerOne}>
-            <span>24 th floor</span>
-            <h3>Penthouses with terrace</h3>
-          </div>
-          <div className={styles.towerTwo}>
-            <span>21-23 rd floor</span>
-            <h3>Penthouses</h3>
-          </div>
-          <div className={styles.towerThree}>
-            <span>7-20 th floor</span>
-            <h3>Appartments</h3>
-          </div>
-          <div className={styles.towerFour}>
-            <span>6th floor</span>
-            <h3>Apartments / lounge area / yard</h3>
-          </div>
-          <div className={styles.towerFive}>
-            <span>5th floor</span>
-            <h3>Fitness/ lounge area</h3>
-          </div>
-          <div className={styles.towerSix}>
-            <span>2-4th floor</span>
-            <h3>Business center </h3>
-          </div>
-          <div className={styles.towerSeven}>
-            <span>1st floor</span>
-            <h3>Lobby</h3>
-          </div>
-          <div className={styles.towerEight}>
-            <span>1st floor</span>
-            <h3>Commercial zone</h3>
-          </div>
+          <Fade left cascade>
+            <div className={styles.towerOne}>
+              <span>24 th {t("hello11")}</span>
+              <h3>{t("hello12")}</h3>
+            </div>
+          </Fade>
+          <Fade left cascade>
+            <div className={styles.towerTwo}>
+              <span>21-23 rd {t("hello11")}</span>
+              <h3>{t("hello13")}</h3>
+            </div>
+          </Fade>
+          <Fade left cascade>
+            <div className={styles.towerThree}>
+              <span>7-20 th {t("hello11")}</span>
+              <h3>{t("hello14")}</h3>
+            </div>
+          </Fade>
+          <Fade left cascade>
+            <div className={styles.towerFour}>
+              <span>6th {t("hello11")}</span>
+              <h3>{t("hello15")}</h3>
+            </div>
+          </Fade>
+          <Fade left cascade>
+            <div className={styles.towerFive}>
+              <span>5th {t("hello11")}</span>
+              <h3>{t("hello16")}</h3>
+            </div>
+          </Fade>
+          <Fade left cascade>
+            <div className={styles.towerSix}>
+              <span>2-4th {t("hello11")}</span>
+              <h3>{t("hello17")} </h3>
+            </div>
+          </Fade>
+          <Fade left cascade>
+            <div className={styles.towerSeven}>
+              <span>1st {t("hello11")}</span>
+              <h3>{t("hello18")}</h3>
+            </div>
+          </Fade>
+          <Fade left cascade>
+            <div className={styles.towerEight}>
+              <span>1st {t("hello11")}</span>
+              <h3>{t("hello19")}</h3>
+            </div>
+          </Fade>
         </div>
         <img
           src={TowerImage}

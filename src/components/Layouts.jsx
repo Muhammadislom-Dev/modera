@@ -20,7 +20,7 @@ function Layouts() {
   return (
     <div className={styles.layouts}>
       <div className="container container-fluid">
-        <h2 className={styles.layoutName}>Layouts</h2>
+        <h2 className={styles.layoutName}>{t("hello2")}</h2>
         <div className={styles.layoutsList}>
           <div className={styles.layoutsItem}>
             {category?.map((evt) => (

@@ -75,7 +75,6 @@ function Contact() {
               <img src={Location} alt="Phone" className="modera-icon" />
             </a>
 
-            {/* /// */}
             <a href="tel:+998940007777" className="moderaLinks">
               <img src={Phone1} alt="Phone" />
             </a>
