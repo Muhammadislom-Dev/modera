@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   src: url("../fonts/Vocal\ Regular.otf");
 }
 
@@ -29,7 +29,7 @@
 
 .navbarItem h4 {
   color: #fff;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -52,7 +52,7 @@
   justify-content: center;
   color: #fff;
   text-align: center;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 290;
@@ -63,7 +63,7 @@
 
 .headerName {
   color: #f9f1f2;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -99,7 +99,7 @@
   border: 1px solid #40128b;
   color: #40128b;
   text-align: center;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -124,7 +124,7 @@
 .headerFormName {
   color: #40128b;
   text-align: center;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -148,7 +148,7 @@
 
 .formInput::placeholder {
   color: rgba(64, 18, 139, 0.2);
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -165,7 +165,7 @@
 
 .galleryName {
   color: #8062d6;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 150px;
   font-style: normal;
   font-weight: 700;
@@ -240,7 +240,7 @@
 
 .contactName {
   color: #f9f1f2;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 150px;
   font-style: normal;
   font-weight: 700;
@@ -395,7 +395,7 @@
 
 .sectionName {
   color: #40128b;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -407,7 +407,7 @@
 
 .sectionItem p {
   color: #40128b;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -483,7 +483,7 @@
 .towerList span {
   color: #40128b;
   text-align: right;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -493,7 +493,7 @@
 .towerList h3 {
   color: #40128b;
   text-align: right;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -517,7 +517,7 @@
 
 .layoutName {
   color: #f9f1f2;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 150px;
   font-style: normal;
   font-weight: 700;
@@ -532,7 +532,7 @@
 
 .layoutsList a {
   color: #fff;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 500;
@@ -568,7 +568,7 @@
   text-align: center;
   leading-trim: both;
   text-edge: cap;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
@@ -602,7 +602,7 @@
   color: #8062d6;
   leading-trim: both;
   text-edge: cap;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -627,7 +627,7 @@
   color: #40128b;
   leading-trim: both;
   text-edge: cap;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -725,7 +725,7 @@
 
 .headermodal h1 {
   color: #fff;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 128px;
   font-style: normal;
   font-weight: 800;
@@ -735,7 +735,7 @@
 
 .headermodal h2 {
   color: #ffd2d7;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 128px;
   font-style: normal;
   font-weight: 800;
@@ -758,7 +758,7 @@
 
 .headerModalItem h4 {
   color: #ffd2d7;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -768,7 +768,7 @@
 .headerModalTop a {
   color: #fff;
   text-align: right;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 800;

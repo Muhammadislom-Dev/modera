@@ -30,7 +30,7 @@
 }
 .aboutTop p {
   color: #40128b;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -47,7 +47,7 @@
   color: #40128b;
   leading-trim: both;
   text-edge: cap;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -99,14 +99,14 @@
   border-bottom: 3px solid #8062d6;
   padding: 8px 12px;
   color: #40128b;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 36px;
   margin: 25px 0;
 }
 
 .form input::placeholder {
   color: #ffd2d7;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 300;
@@ -138,7 +138,7 @@
 
 .bottom a {
   color: #fff;
-  font-family: Vocal;
+  font-family: Vocal, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;

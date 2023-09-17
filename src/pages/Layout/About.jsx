@@ -15,7 +15,6 @@ function About() {
       .then((res) => setLayout(res.data));
   }, [id]);
 
-  console.log(layout);
   return (
     <div className={styles.about}>
       <div className="container">
