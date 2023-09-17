@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Gallery.module.css";
-import TowerImage from "../assets/tower.svg";
+import TowerImage from "../assets/tower (1).png";
 
 function Tower() {
   return (

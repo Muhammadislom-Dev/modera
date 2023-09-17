@@ -4,9 +4,9 @@ import Logo from "../assets/logo.png";
 import twodote from "../assets/twodote.svg";
 import { useTranslation } from "react-i18next";
 import Language from "./Language";
+import { Link } from "react-router-dom";
 
 function Navbar({ setOpen, open }) {
-  
   const { t } = useTranslation();
   const handleOpen = () => {
     setOpen(true);
@@ -20,7 +20,9 @@ function Navbar({ setOpen, open }) {
       className="navbar">
       <div className="container">
         <div className={styles.navbarList}>
-          <img src={Logo} alt="Logo" className="navbar-logo" />
+          <Link to="/">
+            <img src={Logo} alt="Logo" className="navbar-logo" />
+          </Link>
           <div className={styles.navbarItem}>
             <a href="tel:+998940007777" className={styles.navbarLink}>
               +99894 000 7777
