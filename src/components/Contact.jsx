@@ -99,7 +99,11 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className={styles.footer}></div>
+      <div className={styles.footer}>
+        <a href="tel:+998901693527">
+          Разработано MX CODING c +998 90 169 35 27
+        </a>
+      </div>
     </>
   );
 }

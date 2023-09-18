@@ -269,6 +269,10 @@
 .footer {
   background: #40128b;
   padding: 35px 0;
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .sectionList {
