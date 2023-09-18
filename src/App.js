@@ -33,7 +33,7 @@ function App() {
                 <HeaderModal />
               )}
               {open === false ? <HeaderForm /> : ""}
-              {/* <Section /> */}
+              <Section />
               <Tower />
               <Busines />
               <Layouts />
