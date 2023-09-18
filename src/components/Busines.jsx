@@ -7,8 +7,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
+import "swiper/css/effect-cards";
 import { FreeMode, Scrollbar, Mousewheel } from "swiper";
 import { useTranslation } from "react-i18next";
+import { EffectCards } from "swiper";
 
 function Busines() {
   const [t, i18next] = useTranslation();
@@ -37,6 +39,32 @@ function Busines() {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <Swiper
+        effect={"cube"}
+        grabCursor={true}
+        cubeEffect={{
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        }}
+        pagination={true}
+        className="mySwiperResponsive">
+        {data?.map((evt) => (
+          <SwiperSlide className={styles.businesItem}>
+            <div key={evt.id}>
+              <img src={evt.img} alt="" />
+              <h2 className="businesName">
+                {" "}
+                {evt[`title_${i18next.language}`]}
+              </h2>
+              <p className="businesText">{evt[`text_${i18next.language}`]}</p>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
       <Icon />
     </div>
   );

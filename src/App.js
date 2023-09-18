@@ -34,7 +34,7 @@ function App() {
               )}
               {open === false ? <HeaderForm /> : ""}
               {/* <Section /> */}
-              {/* <Tower /> */}
+              <Tower />
               <Busines />
               <Layouts />
               <Gallery />
