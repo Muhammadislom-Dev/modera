@@ -44,7 +44,7 @@ function App() {
             </>
           }
         />
-        {/* <Route
+        <Route
           path="/layout/:id"
           element={
             <>
@@ -59,7 +59,7 @@ function App() {
               <LayoutAbout />
             </>
           }
-        /> */}
+        />
       </Routes>
     </div>
   );
