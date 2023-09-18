@@ -33,8 +33,8 @@ function App() {
                 <HeaderModal />
               )}
               {open === false ? <HeaderForm /> : ""}
-              <Section />
-              <Tower />
+              {/* <Section /> */}
+              {/* <Tower /> */}
               <Busines />
               <Layouts />
               <Gallery />
@@ -44,7 +44,7 @@ function App() {
             </>
           }
         />
-        <Route
+        {/* <Route
           path="/layout/:id"
           element={
             <>
@@ -59,7 +59,7 @@ function App() {
               <LayoutAbout />
             </>
           }
-        />
+        /> */}
       </Routes>
     </div>
   );
