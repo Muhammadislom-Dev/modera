@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Gallery.module-v2.css";
+import styles from "./Gallery.module.css";
 import { Link } from "react-router-dom";
 import Layer from "../assets/layer.png";
 import { useState, useEffect } from "react";

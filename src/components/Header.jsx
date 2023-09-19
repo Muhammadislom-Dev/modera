@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./Gallery.module-v2.css";
+import styles from "./Gallery.module.css";
 import Navbar from "./Navbar";
 import { Fade } from "react-reveal";
 import { useTranslation } from "react-i18next";
-import "../App.css";
+import '../App.css'
 
 function Header({ setOpen, open }) {
   const { t } = useTranslation();
