@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Gallery.module.css";
 import Tower from "../assets/tower.png";
 import { useTranslation } from "react-i18next";
+import '../App.css'
 
 function Company() {
   const { t } = useTranslation();

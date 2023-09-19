@@ -11,6 +11,7 @@ import "swiper/css/effect-cards";
 import { FreeMode, Scrollbar, Mousewheel } from "swiper";
 import { useTranslation } from "react-i18next";
 import { EffectCards } from "swiper";
+import '../App.css'
 
 function Busines() {
   const [t, i18next] = useTranslation();

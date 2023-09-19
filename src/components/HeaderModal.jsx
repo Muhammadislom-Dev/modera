@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Gallery.module.css";
 import Navbar from "./Navbar";
 import { useTranslation } from "react-i18next";
+import "../App.css";
 
 function HeaderModal() {
   const { t } = useTranslation();

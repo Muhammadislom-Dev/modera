@@ -3,6 +3,7 @@ import styles from "./Gallery.module.css";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
+import "../App.css";
 
 function HeaderForm() {
   const { t } = useTranslation();

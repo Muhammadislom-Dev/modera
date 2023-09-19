@@ -3,6 +3,7 @@ import styles from "./Gallery.module.css";
 import Navbar from "./Navbar";
 import { Fade } from "react-reveal";
 import { useTranslation } from "react-i18next";
+import '../App.css'
 
 function Header({ setOpen, open }) {
   const { t } = useTranslation();

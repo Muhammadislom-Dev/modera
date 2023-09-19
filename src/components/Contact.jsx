@@ -13,6 +13,7 @@ import Instagram1 from "../assets/icon-instragram.svg";
 import Telegram1 from "../assets/icon-telegram.svg";
 import Location1 from "../assets/icon-location.svg";
 import { useTranslation } from "react-i18next";
+import '../App.css'
 
 function Contact() {
   const { t } = useTranslation();

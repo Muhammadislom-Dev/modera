@@ -8,6 +8,7 @@ import Image5 from "../assets/img5.png";
 import Image6 from "../assets/img6.png";
 import { useTranslation } from "react-i18next";
 import Fade from "react-reveal/Fade";
+import "../App.css";
 
 function Gallery() {
   const { t } = useTranslation();

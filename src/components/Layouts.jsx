@@ -5,6 +5,7 @@ import Layer from "../assets/layer.png";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
+import "../App.css";
 
 function Layouts() {
   const [t, i18next] = useTranslation();
