@@ -4,67 +4,63 @@ import TowerImage from "../assets/tower (1).png";
 import TowerImage2 from "../assets/tower2.png";
 import { Fade } from "react-reveal";
 import { t } from "i18next";
-import '../App.css'
+import "./style.css";
 
 function Tower() {
   return (
     <div className="tower">
       <div style={{ display: "flex" }} className="container">
-        <div className={styles.towerList}>
+        <div className="towerList">
           <Fade left cascade>
-            <div className={styles.towerOne}>
+            <div className="towerOne">
               <span>24 th {t("hello11")}</span>
               <h3>{t("hello12")}</h3>
             </div>
           </Fade>
           <Fade left cascade>
-            <div className={styles.towerTwo}>
+            <div className="towerTwo">
               <span>21-23 rd {t("hello11")}</span>
               <h3>{t("hello13")}</h3>
             </div>
           </Fade>
           <Fade left cascade>
-            <div className={styles.towerThree}>
+            <div className="towerThree">
               <span>7-20 th {t("hello11")}</span>
               <h3>{t("hello14")}</h3>
             </div>
           </Fade>
           <Fade left cascade>
-            <div className={styles.towerFour}>
+            <div className="towerFour">
               <span>6th {t("hello11")}</span>
               <h3>{t("hello15")}</h3>
             </div>
           </Fade>
           <Fade left cascade>
-            <div className={styles.towerFive}>
+            <div className="towerFive">
               <span>5th {t("hello11")}</span>
               <h3>{t("hello16")}</h3>
             </div>
           </Fade>
           <Fade left cascade>
-            <div className={styles.towerSix}>
+            <div className="towerSix">
               <span>2-4th {t("hello11")}</span>
               <h3>{t("hello17")} </h3>
             </div>
           </Fade>
           <Fade left cascade>
-            <div className={styles.towerSeven}>
+            <div className="towerSeven">
               <span>1st {t("hello11")}</span>
               <h3>{t("hello18")}</h3>
             </div>
           </Fade>
           <Fade left cascade>
-            <div className={styles.towerEight}>
+            <div className="towerEight">
               <span>1st {t("hello11")}</span>
               <h3>{t("hello19")}</h3>
             </div>
           </Fade>
         </div>
-        <img
-          src={TowerImage}
-          alt="Modera Tower"
-          className={styles.towerImage}
-        />
+        <img src={TowerImage} alt="Modera Tower" className="towerImage" />
         <div className="div">
           <img src={TowerImage2} alt="Modera Tower" className="tower-image" />
         </div>

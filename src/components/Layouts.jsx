@@ -5,7 +5,7 @@ import Layer from "../assets/layer.png";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
-import "../App.css";
+import "./style.css";
 
 function Layouts() {
   const [t, i18next] = useTranslation();
@@ -19,21 +19,21 @@ function Layouts() {
   }, []);
 
   return (
-    <div className={styles.layouts}>
+    <div className="layouts">
       <div className="container container-fluid">
-        <h2 className={styles.layoutName}>{t("hello2")}</h2>
-        <div className={styles.layoutsList}>
-          <div className={styles.layoutsItem}>
+        <h2 className="layoutName">{t("hello2")}</h2>
+        <div className="layoutsList">
+          <div className="layoutsItem">
             {category?.map((evt) => (
               <Link
                 key={evt.id}
-                className={styles.layoutsLink}
+                className="layoutsLink"
                 to={`/layout/${evt?.id}`}>
                 {evt[`name_${i18next.language}`]}
               </Link>
             ))}
           </div>
-          <img src={Layer} alt="" className={styles.layoutsImage} />
+          <img src={Layer} alt="" className="layoutsImage" />
         </div>
       </div>
     </div>

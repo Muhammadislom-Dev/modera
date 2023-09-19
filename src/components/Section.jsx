@@ -4,36 +4,36 @@ import { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { useTranslation } from "react-i18next";
-import "../App.css";
+import "./style.css";
 
 function Section() {
   const [count, setCount] = useState(false);
   const { t } = useTranslation();
   return (
-    <div className={styles.section}>
+    <div className="section">
       <div className="container">
         <ScrollTrigger
           onEnter={() => setCount(true)}
           onExit={() => setCount(false)}>
-          <div className={styles.sectionList}>
-            <div className={styles.sectionItem}>
-              <h3 className={styles.sectionName}>
+          <div className="sectionList">
+            <div className="sectionItem">
+              <h3 className="sectionName">
                 {count && (
                   <CountUp start={0} duration={2.75} end="24" delay={0} />
                 )}
               </h3>
               <p>{t("hello6")}</p>
             </div>
-            <div className={styles.sectionItem}>
-              <h3 className={styles.sectionName}>
+            <div className="sectionItem">
+              <h3 className="sectionName">
                 {count && (
                   <CountUp start={0} duration={2.75} end="96" delay={0} />
                 )}
               </h3>
               <p>m</p>
             </div>
-            <div className={styles.sectionItem}>
-              <h3 className={styles.sectionName}>
+            <div className="sectionItem">
+              <h3 className="sectionName">
                 {count && (
                   <CountUp start={0} duration={2.75} end="5" delay={0} />
                 )}
@@ -42,8 +42,8 @@ function Section() {
                 {t("hello7")} <br /> {t("hello8")}
               </p>
             </div>
-            <div className={styles.sectionItem}>
-              <h3 className={styles.sectionName}>
+            <div className="sectionItem">
+              <h3 className="sectionName">
                 {count && (
                   <CountUp start={0} duration={2.75} end="6" delay={0} />
                 )}

@@ -5,7 +5,7 @@ import twodote from "../assets/twodote.svg";
 import { useTranslation } from "react-i18next";
 import Language from "./Language";
 import { Link } from "react-router-dom";
-import '../App.css'
+import "./style.css";
 
 function Navbar({ setOpen, open }) {
   const { t } = useTranslation();
@@ -20,12 +20,12 @@ function Navbar({ setOpen, open }) {
       style={{ backgroundColor: `${open === false ? "" : "#40128B"}` }}
       className="navbar">
       <div className="container">
-        <div className={styles.navbarList}>
+        <div className="navbarList">
           <Link to="/">
             <img src={Logo} alt="Logo" className="navbar-logo" />
           </Link>
-          <div className={styles.navbarItem}>
-            <a href="tel:+998940007777" className={styles.navbarLink}>
+          <div className="navbarItem">
+            <a href="tel:+998940007777" className="navbarLink">
               +99894 000 7777
             </a>
             <Language />

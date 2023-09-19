@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./Gallery.module.css";
 import "../App.css";
+import './style.css'
 
 function Icon() {
   return (
-    <div className={styles.iconBox}>
-      <div className={styles.iconList}>
-        <div className={styles.iconItem}>
+    <div className="iconBox">
+      <div className="iconList">
+        <div className="iconItem">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="82"
@@ -19,7 +20,7 @@ function Icon() {
             />
           </svg>
         </div>
-        <div className={styles.iconItems}>
+        <div className="iconItems">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="69"
@@ -40,7 +41,7 @@ function Icon() {
             />
           </svg>
         </div>
-        <div className={styles.iconItem}>
+        <div className="iconItem">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="67"
@@ -53,7 +54,7 @@ function Icon() {
             />
           </svg>
         </div>
-        <div className={styles.iconItems}>
+        <div className="iconItems">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="109"
@@ -67,7 +68,7 @@ function Icon() {
             />
           </svg>
         </div>
-        <div className={styles.iconItem}>
+        <div className="iconItem">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="56"
@@ -81,8 +82,8 @@ function Icon() {
           </svg>
         </div>
       </div>
-      <div className={styles.iconList}>
-        <div className={styles.iconItems}>
+      <div className="iconList">
+        <div className="iconItems">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="68"
@@ -96,7 +97,7 @@ function Icon() {
             />
           </svg>
         </div>
-        <div className={styles.iconItem}>
+        <div className="iconItem">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="59"
@@ -133,7 +134,7 @@ function Icon() {
             />
           </svg>
         </div>
-        <div className={styles.iconItems}>
+        <div className="iconItems">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="64"
@@ -176,7 +177,7 @@ function Icon() {
             />
           </svg>
         </div>
-        <div className={styles.iconItem}>
+        <div className="iconItem">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="47"
@@ -197,7 +198,7 @@ function Icon() {
             />
           </svg>
         </div>
-        <div className={styles.iconItems}>
+        <div className="iconItems">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="58"
@@ -218,7 +219,7 @@ function Icon() {
             />
           </svg>
         </div>
-        <div className={styles.iconItem}>
+        <div className="iconItem">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="56"
