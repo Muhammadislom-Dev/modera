@@ -699,8 +699,8 @@
     flex-wrap: wrap;
   }
   .partnerList img {
-    width: 140px !important;
-    height: 70px !important;
+    width: 90px !important;
+    height: 40px !important;
     object-fit: contain !important;
   }
   .headerName {
@@ -804,7 +804,8 @@
     gap: 15px !important;
   }
   .footer {
-    font-size: 16px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
   }
 
   .sectionItem:nth-child(4) p {
@@ -831,5 +832,9 @@
   }
   .contactList a{
     margin: 0 5.6px;
+  }
+
+  .headerModalItem{
+    margin-top: 80px !important;
   }
 }

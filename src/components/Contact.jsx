@@ -151,7 +151,7 @@ function Contact() {
       </div>
       <div className="footer">
         <a href="tel:+998901693527">
-          Разработано MX CODING c +998 90 169 35 27
+          {t("hello20")}
         </a>
       </div>
     </>
