@@ -8,46 +8,22 @@ import Image5 from "../assets/img5.png";
 import Image6 from "../assets/img6.png";
 import { useTranslation } from "react-i18next";
 import Fade from "react-reveal/Fade";
-import "../App.css";
+import "./style.css";
 
 function Gallery() {
   const { t } = useTranslation();
   return (
-    <div className={styles.gallery}>
+    <div className="gallery">
       <div className="container">
-        <h1 className={styles.galleryName}>{t("offers")}</h1>
+        <h1 className="galleryName">{t("offers")}</h1>
         <Fade bottom cascade>
-          <div className={styles.galleryList}>
-            <img
-              src={Image1}
-              alt="Gallery Image 1"
-              className={styles.galeryImage}
-            />
-            <img
-              src={Image2}
-              alt="Gallery Image 2"
-              className={styles.galeryImage}
-            />
-            <img
-              src={Image3}
-              alt="Gallery Image 3"
-              className={styles.galeryImage}
-            />
-            <img
-              src={Image4}
-              alt="Gallery Image 4"
-              className={styles.galeryImage}
-            />
-            <img
-              src={Image5}
-              alt="Gallery Image 5"
-              className={styles.galeryImage}
-            />
-            <img
-              src={Image6}
-              alt="Gallery Image 6"
-              className={styles.galeryImage}
-            />
+          <div className="galleryList">
+            <img src={Image1} alt="Gallery Image 1" className="galeryImage" />
+            <img src={Image2} alt="Gallery Image 2" className="galeryImage" />
+            <img src={Image3} alt="Gallery Image 3" className="galeryImage" />
+            <img src={Image4} alt="Gallery Image 4" className="galeryImage" />
+            <img src={Image5} alt="Gallery Image 5" className="galeryImage" />
+            <img src={Image6} alt="Gallery Image 6" className="galeryImage" />
           </div>
         </Fade>
       </div>

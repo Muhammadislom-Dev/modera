@@ -3,20 +3,20 @@ import styles from "./Gallery.module.css";
 import Navbar from "./Navbar";
 import { Fade } from "react-reveal";
 import { useTranslation } from "react-i18next";
-import '../App.css'
+import "./style.css";
 
 function Header({ setOpen, open }) {
   const { t } = useTranslation();
   return (
-    <div className={styles.BgImage}>
+    <div className="BgImage">
       <Navbar open={open} setOpen={setOpen} />
-      <div className={styles.header}>
+      <div className="header">
         <div className="container">
           <Fade left cascade>
             <div>
-              <h2 className={styles.headerName}>{t("multi")}</h2>
-              <h2 className={styles.headerName}>{t("functional")}</h2>
-              <h2 className={styles.headerName}>{t("complex")}</h2>
+              <h2 className="headerName">{t("multi")}</h2>
+              <h2 className="headerName">{t("functional")}</h2>
+              <h2 className="headerName">{t("complex")}</h2>
             </div>
           </Fade>
         </div>

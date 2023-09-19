@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "./Gallery.module.css";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
-import "../App.css";
+import "./style.css";
 
 function HeaderForm() {
   const { t } = useTranslation();
@@ -56,11 +55,8 @@ function HeaderForm() {
     }
   }
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-duration="3000"
-      className={styles.headerForm}>
-      <h2 className={styles.headerFormName}>{t("form")} </h2>
+    <div data-aos="fade-up" data-aos-duration="3000" className="headerForm">
+      <h2 className="headerFormName">{t("form")} </h2>
       <form action="">
         <input
           value={nameValue}
@@ -69,7 +65,7 @@ function HeaderForm() {
           name="name"
           placeholder={t("input")}
           required
-          className={styles.formInput}
+          className="formInput"
         />
         <input
           value={numberValue}
@@ -78,7 +74,7 @@ function HeaderForm() {
           name="tel"
           placeholder={t("input1")}
           required
-          className={styles.formInput}
+          className="formInput"
         />
       </form>
       <button type="submit" onClick={() => sendMessage()}>

@@ -12,7 +12,7 @@ import Instagram1 from "../assets/icon-instragram.svg";
 import Telegram1 from "../assets/icon-telegram.svg";
 import Location1 from "../assets/icon-location.svg";
 import { useTranslation } from "react-i18next";
-import '../App.css'
+import "./style.css";
 
 function Contact() {
   const { t } = useTranslation();
@@ -20,9 +20,9 @@ function Contact() {
     <>
       <div className={styles.contact}>
         <div className="container">
-          <h2 className={styles.contactName}>{t("Contacts")}</h2>
-          <img src={MenuLogo} alt="Logo" className={styles.menuLogo} />
-          <div className={styles.moderaItem}>
+          <h2 className="contactName">{t("Contacts")}</h2>
+          <img src={MenuLogo} alt="Logo" className="menuLogo" />
+          <div className="moderaItem">
             <img src={Modera} alt="Modera Image" className="contactImage" />
           </div>
           <div className="moderaList">
