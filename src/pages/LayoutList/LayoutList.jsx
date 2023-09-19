@@ -4,6 +4,7 @@ import axios from "axios";
 import Navbar from "../Layout/Navbar";
 import { Link, useParams } from "react-router-dom";
 import styles from "../Layout/Layout.module.css";
+import "../Layout/style.css";
 
 function LayoutList() {
   const { id } = useParams();
@@ -50,9 +51,9 @@ function LayoutList() {
           ))}
         </div>
       </div>
-      <div className={styles.bottom}>
+      <div className="bottom">
         <div className="container">
-          <div className={styles.bottomList}>
+          <div className="bottomList">
             <a href="https://www.facebook.com/profile.php?id=61550525660613&mibextid=LQQJ4d">
               FACEBOOK
             </a>

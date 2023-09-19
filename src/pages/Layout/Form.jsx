@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Layout.module.css";
 import { toast } from "react-toastify";
+import "./style.css";
 
 function Form() {
   const [nameValue, setNameValue] = useState("");
@@ -52,7 +53,7 @@ function Form() {
     }
   }
   return (
-    <div className={styles.form}>
+    <div className="form">
       <div className="container">
         <form action="">
           <input

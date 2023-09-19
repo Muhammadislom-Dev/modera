@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
+import './style.css'
 
 function About() {
   const { id } = useParams();
@@ -16,14 +17,14 @@ function About() {
   }, [id]);
 
   return (
-    <div className={styles.about}>
+    <div className="about">
       <div className="container">
-        <div className={styles.aboutList}>
-          <div className={styles.aboutLeft}>
+        <div className="aboutList">
+          <div className="aboutLeft">
             <img src={layout.image1} alt="" className="layoutsIcon" />
           </div>
           <div className="aboutRight">
-            <div className={styles.aboutTop}>
+            <div className="aboutTop">
               <h3>{layout.name}</h3>
               <span>
                 <p>Hall</p>
@@ -42,12 +43,12 @@ function About() {
                 <p>{layout.bethroom} m</p>
               </span>
             </div>
-            <div className={styles.aboutBottom}>
-              <div className={styles.aboutItem}>
-                <img src={layout.image2} alt="" className={styles.aboutIcon} />
+            <div className="aboutBottom">
+              <div className="aboutItem">
+                <img src={layout.image2} alt="" className="aboutIcon" />
               </div>
-              <div className={styles.aboutItem}>
-                <img src={layout.image3} alt="" className={styles.aboutIcon} />
+              <div className="aboutItem">
+                <img src={layout.image3} alt="" className="aboutIcon" />
               </div>
             </div>
           </div>
