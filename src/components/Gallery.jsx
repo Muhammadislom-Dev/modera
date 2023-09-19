@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Gallery.module.css";
+import styles from "./Gallery.module-v2.css"
 import Image1 from "../assets/img1.png";
 import Image2 from "../assets/img2.png";
 import Image3 from "../assets/img3.png";

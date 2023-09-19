@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Gallery.module.css";
+import styles from "./Gallery.module-v2.css";
 import MenuLogo from "../assets/menu-logo.png";
 import Modera from "../assets/modera.png";
 import Phone from "../assets/phone.svg";
@@ -12,7 +12,7 @@ import Instagram1 from "../assets/icon-instragram.svg";
 import Telegram1 from "../assets/icon-telegram.svg";
 import Location1 from "../assets/icon-location.svg";
 import { useTranslation } from "react-i18next";
-import '../App.css'
+import "../App.css";
 
 function Contact() {
   const { t } = useTranslation();
