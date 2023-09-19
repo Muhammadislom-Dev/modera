@@ -10,12 +10,12 @@ import "swiper/css/scrollbar";
 import "swiper/css/effect-cards";
 import { FreeMode, Scrollbar, Mousewheel } from "swiper";
 import { useTranslation } from "react-i18next";
-import '../App.css'
+import "./style.css";
 
 function Busines() {
   const [t, i18next] = useTranslation();
   return (
-    <div className={styles.busines}>
+    <div className="busines">
       <Swiper
         direction={"horizontal"}
         freeMode={true}
@@ -27,7 +27,7 @@ function Busines() {
         speed={2000}
         className="mySwiper">
         {data?.map((evt) => (
-          <SwiperSlide className={styles.businesItem}>
+          <SwiperSlide className="businesItem">
             <div key={evt.id}>
               <img src={evt.img} alt="" />
               <h2 className="businesName">
@@ -52,7 +52,7 @@ function Busines() {
         pagination={true}
         className="mySwiperResponsive">
         {data?.map((evt) => (
-          <SwiperSlide className={styles.businesItem}>
+          <SwiperSlide className="businesItem">
             <div key={evt.id}>
               <img src={evt.img} alt="" />
               <h2 className="businesName">
