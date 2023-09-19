@@ -5,6 +5,7 @@ import twodote from "../assets/twodote.svg";
 import { useTranslation } from "react-i18next";
 import Language from "./Language";
 import { Link } from "react-router-dom";
+import '../App.css'
 
 function Navbar({ setOpen, open }) {
   const { t } = useTranslation();

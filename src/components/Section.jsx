@@ -4,6 +4,7 @@ import { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { useTranslation } from "react-i18next";
+import "../App.css";
 
 function Section() {
   const [count, setCount] = useState(false);

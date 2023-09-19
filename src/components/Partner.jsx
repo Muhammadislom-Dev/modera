@@ -6,6 +6,7 @@ import Asset3 from "../assets/Asset 3.svg";
 import Asset4 from "../assets/Asset 4.svg";
 import Asset5 from "../assets/Asset 5.svg";
 import Asset6 from "../assets/Asset 6.svg";
+import '../App.css'
 
 function Partner() {
   return (
