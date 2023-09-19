@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Gallery.module-v2";
+import styles from "./Gallery.module.css";
 import Icon from "./Icon";
 import { data } from "./data";
 
