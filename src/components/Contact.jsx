@@ -3,7 +3,6 @@ import styles from "./Gallery.module.css";
 import MenuLogo from "../assets/menu-logo.png";
 import Modera from "../assets/modera.png";
 import Phone from "../assets/phone.svg";
-import Facebook from "../assets/phone.svg";
 import Instagram from "../assets/instagram.svg";
 import Telegram from "../assets/telegram.svg";
 import Location from "../assets/location.svg";
