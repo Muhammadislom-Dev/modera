@@ -13,6 +13,27 @@
   transition: 0.3s all ease-in-out;
 }
 
+.contactList {
+  display: none !important;
+  border-radius: 25px 25px 0px 0px;
+  background: #ffd2d7;
+  padding: 15px 10px;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contactList img {
+  width: 50px;
+  height: 50px;
+}
+
+.contactList svg {
+  width: 50px;
+  height: 50px;
+}
+
 .layout-list .container {
   display: flex;
   /* align-items: center; */
@@ -721,7 +742,7 @@
     font-size: 28px !important;
     line-height: 40px !important;
   }
-  .moderaList img {
+  .moderaList .modera-icon {
     width: 30px !important;
     height: 30px !important;
   }
@@ -730,15 +751,26 @@
     height: 30px !important;
   }
   .moderaList {
-    top: 70% !important;
+    top: 91.2% !important;
     gap: 10px !important;
-    width: 60px !important;
-    padding: 20px 10px !important;
+    left: 0;
+    width: 60% !important;
+    border-radius: 25px 25px 0px 0px !important;
+    padding: 15px 10px !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
   }
   .moderaItem {
     width: 90% !important;
     height: 350px !important;
-    left: 2% !important;
+    left: 5% !important;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .menuLogo {
+    height: 500px !important;
   }
   .contactImage {
     width: 98% !important;
@@ -758,31 +790,46 @@
   .iconItems {
     width: 63px !important;
     height: 63px !important;
-    border-radius:0 20px !important;
+    border-radius: 0 20px !important;
   }
-  .iconItem svg{
+  .iconItem svg {
     width: 30px !important;
     height: 30px !important;
   }
-  .iconItems svg{
+  .iconItems svg {
     width: 30px !important;
     height: 30px !important;
   }
-  .iconList{
+  .iconList {
     gap: 15px !important;
   }
-  .footer{
+  .footer {
     font-size: 16px !important;
   }
 
-  .sectionItem:nth-child(4) p{
+  .sectionItem:nth-child(4) p {
     margin-left: 20px !important;
   }
-  .sectionItem:nth-child(2) p{
+  .sectionItem:nth-child(2) p {
     margin-left: 35px !important;
     margin-top: 0 !important;
   }
-  .sectionItem:nth-child(3) p{
+  .sectionItem:nth-child(3) p {
     margin-left: 25px !important;
+  }
+  .moderaList:hover .moderaLinks {
+    pointer-events: none !important;
+  }
+  .moderaList:hover {
+    pointer-events: none !important;
+  }
+  .moderaList {
+    display: none !important;
+  }
+  .contactList {
+    display: block !important;
+  }
+  .contactList a{
+    margin: 0 5.6px;
   }
 }
