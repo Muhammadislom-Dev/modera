@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Navbar from "../Layout/Navbar";
 import { Link, useParams } from "react-router-dom";
-import styles from "../Layout/Layout.module.css";
 import "../Layout/style.css";
 
 function LayoutList() {

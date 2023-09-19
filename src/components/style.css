@@ -11,7 +11,7 @@
 }
 
 .header {
-  padding-top: 450px;
+  padding-top: 320px;
   padding-bottom: 147px;
 }
 
@@ -734,7 +734,7 @@
   font-style: normal;
   font-weight: 800;
   line-height: 92.5%;
-  padding-top: 440px;
+  padding-top: 250px;
 }
 
 .headermodal h2 {
@@ -755,9 +755,9 @@
   border-radius: 50px;
   background: #8062d6;
   width: 566px;
-  height: 607px;
+  height: 580px;
   padding: 80px;
-  margin-top: 180px;
+  margin-top: 40px;
 }
 
 .headerModalItem h4 {
@@ -773,7 +773,7 @@
   color: #fff;
   text-align: right;
   font-family: Vocal, sans-serif;
-  font-size: 48px;
+  font-size: 42px;
   font-style: normal;
   font-weight: 800;
   line-height: 92.5%;

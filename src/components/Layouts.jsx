@@ -19,7 +19,7 @@ function Layouts() {
   }, []);
 
   return (
-    <div className="layouts">
+    <div id="layout" className="layouts">
       <div className="container container-fluid">
         <h2 className="layoutName">{t("hello2")}</h2>
         <div className="layoutsList">

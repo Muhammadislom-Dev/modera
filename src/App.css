@@ -479,8 +479,9 @@
   }
 
   .sectionItem {
-    width: 120px !important;
-    height: 120px !important;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 0 25px !important;
   }
   .sectionName {
     font-size: 30px !important;
@@ -491,7 +492,7 @@
   }
   .sectionItem:nth-child(3) {
     left: 36% !important;
-    margin-top: 0px !important;
+    margin-top: -50px !important;
   }
   .sectionItem:nth-child(2) {
     left: 27% !important;
@@ -542,6 +543,7 @@
   }
   .tower {
     padding-bottom: 50px !important;
+    margin-top: 30px !important;
   }
   .towerFive {
     top: 43% !important;
@@ -586,8 +588,8 @@
     margin: 10px auto !important;
   }
   .busines {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   body .businesItem {
     margin: 0 !important;
@@ -615,7 +617,7 @@
     display: flex;
     flex-direction: column;
   }
-  .headerFormName {
+  body .headerFormName {
     font-size: 25px !important;
   }
   .headermodal h2 {
@@ -636,7 +638,13 @@
     width: 350px !important;
     margin-top: 220px !important;
     border-radius: 20px !important;
+    margin: 0 auto;
   }
+  .headerModalList {
+    display: flex;
+    flex-direction: column;
+  }
+
   .headerModalTop {
     padding-top: 50px !important;
   }
@@ -680,10 +688,10 @@
     line-height: 50px !important;
   }
   .header {
-    padding-top: 150px !important;
+    padding-top: 100px !important;
   }
   .BgImage {
-    min-height: 70vh !important;
+    min-height: 55vh !important;
   }
   .navbarItem h4 {
     font-size: 16px !important;
@@ -742,5 +750,39 @@
   }
   .custom-dropdown-menu {
     top: 5.5% !important;
+  }
+  .busines img {
+    width: 100% !important;
+  }
+  .iconItem,
+  .iconItems {
+    width: 63px !important;
+    height: 63px !important;
+    border-radius:0 20px !important;
+  }
+  .iconItem svg{
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .iconItems svg{
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .iconList{
+    gap: 15px !important;
+  }
+  .footer{
+    font-size: 16px !important;
+  }
+
+  .sectionItem:nth-child(4) p{
+    margin-left: 20px !important;
+  }
+  .sectionItem:nth-child(2) p{
+    margin-left: 35px !important;
+    margin-top: 0 !important;
+  }
+  .sectionItem:nth-child(3) p{
+    margin-left: 25px !important;
   }
 }

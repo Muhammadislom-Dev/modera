@@ -10,7 +10,7 @@ import "./style.css";
 
 function Partner() {
   return (
-    <div className="partner">
+    <div id="specification" className="partner">
       <div className="container">
         <div className="partnerList">
           <img src={Asset1} alt="Icon 1" className="partnerIcon" />

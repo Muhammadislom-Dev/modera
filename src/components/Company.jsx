@@ -7,7 +7,7 @@ import "./style.css";
 function Company() {
   const { t } = useTranslation();
   return (
-    <div className="company">
+    <div id="about" className="company">
       <div className="container container-fluid">
         <div className="companyList">
           <img src={Tower} alt="Modera Tower" className="companyImage" />

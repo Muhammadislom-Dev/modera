@@ -18,7 +18,7 @@ function Contact() {
   const { t } = useTranslation();
   return (
     <>
-      <div className={styles.contact}>
+      <div id="contact" className={styles.contact}>
         <div className="container">
           <h2 className="contactName">{t("Contacts")}</h2>
           <img src={MenuLogo} alt="Logo" className="menuLogo" />
@@ -99,7 +99,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className={styles.footer}>
+      <div className="footer">
         <a href="tel:+998901693527">
           Разработано MX CODING c +998 90 169 35 27
         </a>

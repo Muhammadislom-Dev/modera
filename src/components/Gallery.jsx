@@ -13,7 +13,7 @@ import "./style.css";
 function Gallery() {
   const { t } = useTranslation();
   return (
-    <div className="gallery">
+    <div id="offer" className="gallery">
       <div className="container">
         <h1 className="galleryName">{t("offers")}</h1>
         <Fade bottom cascade>
