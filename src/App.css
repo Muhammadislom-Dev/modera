@@ -715,10 +715,11 @@
   .headerName {
     width: 100% !important;
     font-size: 35px !important;
-    line-height: 40px !important;
+    line-height: 38px !important;
+    padding-left: 20px;
   }
   .header {
-    padding-top: 130px !important;
+    padding-top: 150px !important;
   }
   .BgImage {
     min-height: 55vh !important;
