@@ -13,6 +13,14 @@
   transition: 0.3s all ease-in-out;
 }
 
+.BgImageTwo {
+  background-image: url("./assets/towerimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 852px;
+  display: none;
+}
+
 .contactList {
   display: none !important;
   border-radius: 25px 25px 0px 0px;
@@ -633,6 +641,7 @@
   }
   .headerFormName {
     width: 100% !important;
+    margin-bottom: 30px !important;
   }
   .headerForm form {
     display: flex;
@@ -709,10 +718,11 @@
     line-height: 50px !important;
   }
   .header {
-    padding-top: 100px !important;
+    padding-top: 130px !important;
   }
   .BgImage {
     min-height: 55vh !important;
+    display: none;
   }
   .navbarItem h4 {
     font-size: 16px !important;
@@ -830,11 +840,17 @@
   .contactList {
     display: block !important;
   }
-  .contactList a{
+  .contactList a {
     margin: 0 5.6px;
   }
 
-  .headerModalItem{
+  .headerModalItem {
     margin-top: 80px !important;
+  }
+  .BgImageTwo {
+    display: block;
+  }
+  body .headerForm {
+    padding-top: 25px !important;
   }
 }

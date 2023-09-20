@@ -8,20 +8,36 @@ import "./style.css";
 function Header({ setOpen, open }) {
   const { t } = useTranslation();
   return (
-    <div className="BgImage">
-      <Navbar open={open} setOpen={setOpen} />
-      <div className="header">
-        <div className="container">
-          <Fade left cascade>
-            <div>
-              <h2 className="headerName">{t("multi")}</h2>
-              <h2 className="headerName">{t("functional")}</h2>
-              <h2 className="headerName">{t("complex")}</h2>
-            </div>
-          </Fade>
+    <>
+      <div className="BgImage">
+        <Navbar open={open} setOpen={setOpen} />
+        <div className="header">
+          <div className="container">
+            <Fade left cascade>
+              <div>
+                <h2 className="headerName">{t("multi")}</h2>
+                <h2 className="headerName">{t("functional")}</h2>
+                <h2 className="headerName">{t("complex")}</h2>
+              </div>
+            </Fade>
+          </div>
         </div>
       </div>
-    </div>
+      <div className="BgImageTwo">
+        <Navbar open={open} setOpen={setOpen} />
+        <div className="header">
+          <div className="container">
+            <Fade left cascade>
+              <div>
+                <h2 className="headerName">{t("multi")}</h2>
+                <h2 className="headerName">{t("functional")}</h2>
+                <h2 className="headerName">{t("complex")}</h2>
+              </div>
+            </Fade>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
