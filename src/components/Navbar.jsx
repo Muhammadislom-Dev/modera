@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "./Gallery.module.css";
 import Logo from "../assets/logo.png";
 import twodote from "../assets/twodote.svg";
 import { useTranslation } from "react-i18next";

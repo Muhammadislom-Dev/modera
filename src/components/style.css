@@ -3,6 +3,32 @@
   src: url("../fonts/Vocal\ Regular.otf");
 }
 
+.layoutName,
+.galleryName,
+.contactName {
+  overflow: auto;
+  animation: typing 5s steps(30, end), blink-caret 0.5s step-end;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
 .BgImage {
   background-image: url("../assets/page.png");
   background-repeat: no-repeat;

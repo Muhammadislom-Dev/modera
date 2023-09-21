@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Gallery.module.css";
 import "../App.css";
 import './style.css'
 

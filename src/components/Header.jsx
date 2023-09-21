@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Gallery.module.css";
 import Navbar from "./Navbar";
 import { Fade } from "react-reveal";
 import { useTranslation } from "react-i18next";

@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Gallery.module.css";
 import Asset1 from "../assets/Asset 1.svg";
 import Asset2 from "../assets/Asset 2.svg";
 import Asset3 from "../assets/Asset 3.svg";

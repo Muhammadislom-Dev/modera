@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Gallery.module.css";
 import { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";

@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Gallery.module.css";
 import MenuLogo from "../assets/menu-logo.png";
 import Modera from "../assets/modera.png";
 import Phone from "../assets/phone.svg";
@@ -18,7 +17,7 @@ function Contact() {
   const { t } = useTranslation();
   return (
     <>
-      <div id="contact" className={styles.contact}>
+      <div id="contact" className="contact">
         <div className="container">
           <h2 className="contactName">{t("Contacts")}</h2>
           <img src={MenuLogo} alt="Logo" className="menuLogo" />

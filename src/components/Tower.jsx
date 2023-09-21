@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Gallery.module.css";
 import TowerImage from "../assets/tower (1).png";
 import TowerImage2 from "../assets/tower2.png";
 import { Fade } from "react-reveal";
