@@ -31,8 +31,8 @@ function Layouts() {
                 to={`/layout/${evt?.id}`}>
                 {/* {evt[`name_${i18next.language}`]} */}
                 <TypeAnimation
-                  speed={45}
-                  sequence={[evt[`name_${i18next.language}`], 1320, ""]}
+                  speed={90}
+                  sequence={[evt[`name_${i18next.language}`], 8000, ""]}
                   repeat={Infinity}
                 />
               </Link>
