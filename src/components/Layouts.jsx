@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 import "./style.css";
+import { TypeAnimation } from "react-type-animation";
 
 function Layouts() {
   const [t, i18next] = useTranslation();
@@ -28,7 +29,12 @@ function Layouts() {
                 key={evt.id}
                 className="layoutsLink"
                 to={`/layout/${evt?.id}`}>
-                {evt[`name_${i18next.language}`]}
+                {/* {evt[`name_${i18next.language}`]} */}
+                <TypeAnimation
+                  speed={45}
+                  sequence={[evt[`name_${i18next.language}`], 1320, ""]}
+                  repeat={Infinity}
+                />
               </Link>
             ))}
           </div>

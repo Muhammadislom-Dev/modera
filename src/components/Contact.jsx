@@ -11,6 +11,7 @@ import Instagram1 from "../assets/icon-instragram.svg";
 import Telegram1 from "../assets/icon-telegram.svg";
 import Location1 from "../assets/icon-location.svg";
 import { useTranslation } from "react-i18next";
+import { Fade } from "react-reveal";
 import "./style.css";
 
 function Contact() {
@@ -21,9 +22,11 @@ function Contact() {
         <div className="container">
           <h2 className="contactName">{t("Contacts")}</h2>
           <img src={MenuLogo} alt="Logo" className="menuLogo" />
-          <div className="moderaItem">
-            <img src={Modera} alt="Modera Image" className="contactImage" />
-          </div>
+          <Fade bottom>
+            <div className="moderaItem">
+              <img src={Modera} alt="Modera Image" className="contactImage" />
+            </div>
+          </Fade>
           <div className="moderaList">
             <a href="tel:+998940007777" className="moderaLink">
               <img src={Phone} alt="Phone" className="modera-icon" />
@@ -149,9 +152,7 @@ function Contact() {
         </div>
       </div>
       <div className="footer">
-        <a href="tel:+998901693527">
-          {t("hello20")}
-        </a>
+        <a href="tel:+998901693527">{t("hello20")}</a>
       </div>
     </>
   );

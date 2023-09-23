@@ -12,57 +12,69 @@ import Busines from "./components/Busines";
 import HeaderModal from "./components/HeaderModal";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import LayoutAbout from "./pages/Layout";
 import LayoutList from "./pages/LayoutList/LayoutList";
+import Loader from "./components/Loader";
 
 function App() {
   const [open, setOpen] = useState(false);
 
+  const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowLoader(false);
+    }, 15000);
+  }, []);
+
   return (
-    <div className="App">
-      <ToastContainer />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              {open === false ? (
-                <Header open={open} setOpen={setOpen} />
-              ) : (
-                <HeaderModal />
-              )}
-              {open === false ? <HeaderForm /> : ""}
-              <Section />
-              <Tower />
-              <Busines />
-              <Layouts />
-              <Gallery />
-              <Company />
-              <Partner />
-              <Contact />
-            </>
-          }
-        />
-        <Route
-          path="/layout/:id"
-          element={
-            <>
-              <LayoutList />
-            </>
-          }
-        />
-        <Route
-          path="/layout-about/:id"
-          element={
-            <>
-              <LayoutAbout />
-            </>
-          }
-        />
-      </Routes>
-    </div>
+    <>
+      {showLoader && <Loader />}
+      <div className="App">
+        <ToastContainer />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                {open === false ? (
+                  <Header open={open} setOpen={setOpen} />
+                ) : (
+                  <HeaderModal />
+                )}
+                {open === false ? <HeaderForm /> : ""}
+                <Section />
+                <Tower />
+                <Busines />
+                <Layouts />
+                <Gallery />
+                <Company />
+                <Partner />
+                <Contact />
+              </>
+            }
+          />
+          <Route
+            path="/layout/:id"
+            element={
+              <>
+                <LayoutList />
+              </>
+            }
+          />
+          <Route
+            path="/layout-about/:id"
+            element={
+              <>
+                <LayoutAbout />
+              </>
+            }
+          />
+        </Routes>
+      </div>
+    </>
   );
 }
 

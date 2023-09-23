@@ -236,11 +236,11 @@
   cursor: pointer;
 }
 
-.partnerList {
+/* .partnerList {
   display: flex;
   align-items: center;
   gap: 35px;
-}
+} */
 
 .companyList {
   display: flex;
@@ -561,24 +561,34 @@
 }
 
 .layoutsList a {
-  color: #fff;
   font-family: Vocal, sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 500;
   line-height: 92.5%;
   padding: 8px 0;
+  color: #fff;
   transition: 0.3s all ease-in-out;
+  animation-name: LayoutLink;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 5s;
 }
 
-.layoutsList a:hover {
-  color: #ffd2d7;
+@keyframes LayoutLink {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #ffd2d7;
+  }
 }
 
 .layoutsItem {
   display: flex;
   flex-direction: column;
   margin-top: 80px;
+  width: 650px;
 }
 
 .layoutsImage {

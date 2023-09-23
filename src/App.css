@@ -853,5 +853,17 @@
   }
   body .headerForm {
     padding-top: 25px !important;
+    max-height: 380px;
+    min-height: 380px;
+  }
+
+  .load-title {
+    font-size: 35px !important;
+  }
+
+  .Loader .logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
   }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
+import { TypeAnimation } from "react-type-animation";
 import "./style.css";
 
 function HeaderForm() {
@@ -56,7 +57,10 @@ function HeaderForm() {
   }
   return (
     <div data-aos="fade-up" data-aos-duration="3000" className="headerForm">
-      <h2 className="headerFormName">{t("form")} </h2>
+      <h2 className="headerFormName">
+        <TypeAnimation sequence={[t("form"), 1200, ""]} repeat={Infinity} />
+      </h2>
+      ;
       <form action="">
         <input
           value={nameValue}
