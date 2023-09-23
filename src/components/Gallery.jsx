@@ -8,6 +8,7 @@ import Image6 from "../assets/img6.png";
 import { useTranslation } from "react-i18next";
 import Fade from "react-reveal/Fade";
 import "./style.css";
+import { Bounce, Slide, Zoom } from "react-reveal";
 
 function Gallery() {
   const { t } = useTranslation();
@@ -15,16 +16,26 @@ function Gallery() {
     <div id="offer" className="gallery">
       <div className="container">
         <h1 className="galleryName">{t("offers")}</h1>
-        <Fade bottom cascade>
-          <div className="galleryList">
+        <div className="galleryList">
+          <Zoom top>
             <img src={Image1} alt="Gallery Image 1" className="galeryImage" />
+          </Zoom>
+          <Zoom top>
             <img src={Image2} alt="Gallery Image 2" className="galeryImage" />
+          </Zoom>
+          <Bounce left>
             <img src={Image3} alt="Gallery Image 3" className="galeryImage" />
+          </Bounce>
+          <Bounce right>
             <img src={Image4} alt="Gallery Image 4" className="galeryImage" />
+          </Bounce>
+          <Slide bottom>
             <img src={Image5} alt="Gallery Image 5" className="galeryImage" />
+          </Slide>
+          <Slide bottom>
             <img src={Image6} alt="Gallery Image 6" className="galeryImage" />
-          </div>
-        </Fade>
+          </Slide>
+        </div>
       </div>
     </div>
   );
