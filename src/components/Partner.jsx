@@ -29,7 +29,7 @@ function Partner() {
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
         },
       },
     ],

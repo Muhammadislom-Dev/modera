@@ -3,20 +3,11 @@
   src: url("../fonts/Vocal\ Regular.otf");
 }
 
-.component {
-  /* Boshlang'ich holati */
-  opacity: 0 !important;
-  transform: translateY(20px) !important;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+.slick-slide img {
+  display: flex !important;
 }
 
-.component.show {
-  /* Animatsiya jarayonida */
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-
-/* .layoutName,
+.layoutName,
 .galleryName,
 .contactName {
   overflow: auto;
@@ -40,7 +31,7 @@
   50% {
     border-color: orange;
   }
-} */
+}
 
 .BgImage {
   background-image: url("../assets/page.png");

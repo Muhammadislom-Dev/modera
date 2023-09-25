@@ -38,7 +38,6 @@ function Busines() {
           </SwiperSlide>
         ))}
       </Swiper>
-
       <Swiper
         effect={"cube"}
         grabCursor={true}

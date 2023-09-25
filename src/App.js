@@ -16,12 +16,20 @@ import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import LayoutAbout from "./pages/Layout";
 import LayoutList from "./pages/LayoutList/LayoutList";
+import Loader from "./components/Loader";
 
 function App() {
   const [open, setOpen] = useState(false);
+  const [loader, setLoader] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 3000);
+  }, []);
 
   return (
     <>
+      {loader && <Loader />}
       <div className="App">
         <ToastContainer />
         <Routes>
