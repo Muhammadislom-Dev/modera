@@ -7,7 +7,7 @@ function Loader() {
     <div className="loading">
       <video
         width="100%"
-        height="auto"
+        height="100%"
         autoPlay
         playsInline
         muted

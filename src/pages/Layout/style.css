@@ -102,6 +102,7 @@
   font-family: Vocal, sans-serif;
   font-size: 36px;
   margin: 25px 0;
+  width: 100%;
 }
 
 .form input::placeholder {
