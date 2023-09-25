@@ -10,7 +10,7 @@ import Slider from "react-slick";
 
 function Partner() {
   var settings = {
-    speed: 4000,
+    speed: 5000,
     dots: false,
     autoplay: true,
     infinite: true,
@@ -36,26 +36,28 @@ function Partner() {
   };
   return (
     <div id="specification" className="partner">
-      <Slider {...settings}>
-        <img src={Asset1} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset2} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset3} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset4} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset5} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset6} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset1} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset2} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset3} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset4} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset5} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset6} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset1} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset2} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset3} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset4} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset5} alt="Icon 1" className="partnerIcon" />
-        <img src={Asset6} alt="Icon 1" className="partnerIcon" />
-      </Slider>
+      <div className="container container-fluids">
+        <Slider {...settings}>
+          <img src={Asset1} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset2} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset3} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset4} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset5} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset6} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset1} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset2} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset3} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset4} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset5} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset6} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset1} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset2} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset3} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset4} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset5} alt="Icon 1" className="partnerIcon" />
+          <img src={Asset6} alt="Icon 1" className="partnerIcon" />
+        </Slider>
+      </div>
     </div>
   );
 }
