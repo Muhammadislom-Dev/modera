@@ -706,9 +706,10 @@
   }
   .partnerList {
     flex-wrap: wrap;
+    display: flex;
   }
   .partnerList img {
-    width: 90px !important;
+    width: 95px !important;
     height: 40px !important;
     object-fit: contain !important;
   }
@@ -742,6 +743,7 @@
   }
   .layoutsItem {
     margin-top: 0px !important;
+    width: auto !important;
   }
   .layoutName {
     margin-bottom: 30px !important;
@@ -751,7 +753,8 @@
   }
   .layoutsList a {
     font-size: 28px !important;
-    line-height: 40px !important;
+    line-height: 28px !important;
+    padding: 3px 0 !important;
   }
   .moderaList .modera-icon {
     width: 30px !important;

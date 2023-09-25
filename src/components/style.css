@@ -3,7 +3,7 @@
   src: url("../fonts/Vocal\ Regular.otf");
 }
 
-.layoutName,
+/* .layoutName,
 .galleryName,
 .contactName {
   overflow: auto;
@@ -27,7 +27,7 @@
   50% {
     border-color: orange;
   }
-}
+} */
 
 .BgImage {
   background-image: url("../assets/page.png");

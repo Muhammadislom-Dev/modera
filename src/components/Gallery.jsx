@@ -17,24 +17,24 @@ function Gallery() {
       <div className="container">
         <h1 className="galleryName">{t("offers")}</h1>
         <div className="galleryList">
-          <Zoom top>
-            <img src={Image1} alt="Gallery Image 1" className="galeryImage" />
-          </Zoom>
-          <Zoom top>
-            <img src={Image2} alt="Gallery Image 2" className="galeryImage" />
-          </Zoom>
-          <Bounce left>
-            <img src={Image3} alt="Gallery Image 3" className="galeryImage" />
-          </Bounce>
-          <Bounce right>
-            <img src={Image4} alt="Gallery Image 4" className="galeryImage" />
-          </Bounce>
-          <Slide bottom>
-            <img src={Image5} alt="Gallery Image 5" className="galeryImage" />
-          </Slide>
-          <Slide bottom>
-            <img src={Image6} alt="Gallery Image 6" className="galeryImage" />
-          </Slide>
+          {/* <Zoom top> */}
+          <img src={Image1} alt="Gallery Image 1" className="galeryImage" />
+          {/* </Zoom>
+          <Zoom top> */}
+          <img src={Image2} alt="Gallery Image 2" className="galeryImage" />
+          {/* </Zoom> */}
+          {/* <Bounce left> */}
+          <img src={Image3} alt="Gallery Image 3" className="galeryImage" />
+          {/* </Bounce> */}
+          {/* <Bounce right> */}
+          <img src={Image4} alt="Gallery Image 4" className="galeryImage" />
+          {/* </Bounce> */}
+          {/* <Slide bottom> */}
+          <img src={Image5} alt="Gallery Image 5" className="galeryImage" />
+          {/* </Slide>
+          <Slide bottom> */}
+          <img src={Image6} alt="Gallery Image 6" className="galeryImage" />
+          {/* </Slide> */}
         </div>
       </div>
     </div>
