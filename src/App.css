@@ -508,23 +508,44 @@
   }
 
   .sectionItem {
-    width: 100px !important;
+    border-radius: 0px 20px !important;
+    background: #ffd2d7 !important;
+    box-shadow: 3px 10px 20px 0px rgba(128, 98, 214, 0.2) !important;
+    width: 75px !important;
+    height: 75px !important;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    /* width: 100px !important;
     height: 100px !important;
-    border-radius: 0 25px !important;
+    border-radius: 0 25px !important; */
   }
   .sectionName {
-    font-size: 30px !important;
+    color: #2a1844 !important;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Vocal;
+    font-size: 32px !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 92.5% !important;
+    text-transform: uppercase;
   }
   .sectionItem:nth-child(1) {
-    left: 1% !important;
+    left: 13% !important;
     top: 0% !important;
+    margin-top: -25px;
+  }
+  .sectionItem:nth-child(4){
+    left: 72% !important;
   }
   .sectionItem:nth-child(3) {
-    left: 36% !important;
-    margin-top: -50px !important;
+    left: 53% !important;
+    margin-top: -20px !important;
   }
   .sectionItem:nth-child(2) {
-    left: 27% !important;
+    left: 35% !important;
+    margin-top: 10px !important;
   }
   .sectionItem p {
     font-size: 10px !important;
@@ -554,11 +575,21 @@
     transform: translateX(0) !important;
   }
   .towerList h3 {
-    font-size: 14px !important;
-    line-height: 18px !important;
+    color: #2a1844 !important;
+    text-align: right !important;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 92.5% !important;
   }
   .towerList span {
-    font-size: 12px !important;
+    color: #2a1844 !important;
+    text-align: right !important;
+    font-size: 10px !important;
+    font-weight: 300 !important;
+    line-height: 92.5% !important;
   }
 
   .tower-image {
@@ -567,7 +598,7 @@
     width: 100% !important;
   }
   .towerFour {
-    top: 42% !important;
+    top: 51% !important;
     width: 100% !important;
   }
   .tower {
@@ -575,19 +606,19 @@
     margin-top: 30px !important;
   }
   .towerFive {
-    top: 43% !important;
+    top: 53% !important;
   }
   .towerSix {
-    top: 47% !important;
+    top: 56% !important;
   }
   .towerSeven {
-    top: 48% !important;
+    top: 62% !important;
   }
   .towerEight {
-    top: 50% !important;
+    top: 64% !important;
   }
   .towerThree {
-    top: 30% !important;
+    top: 36% !important;
   }
   .towerList {
     width: 120px !important;
@@ -822,6 +853,14 @@
     line-height: 20px !important;
   }
 
+  .sectionItem p {
+    color: #2a1844 !important;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 92.5% !important;
+    text-transform: uppercase;
+  }
   .sectionItem:nth-child(4) p {
     margin-left: 20px !important;
   }
@@ -831,6 +870,22 @@
   }
   .sectionItem:nth-child(3) p {
     margin-left: 25px !important;
+  }
+  .sectionItem:nth-child(1) p{
+    margin-top: -20px !important;
+    margin-left: 30px !important;
+  }
+  .sectionItem:nth-child(4) h3{
+    margin-left: -20px !important;
+    margin-bottom: 5px !important;
+  }
+  .sectionItem:nth-child(3) h3{
+    margin-left: -20px !important;
+    margin-bottom: 5px !important;
+  }
+  .sectionItem:nth-child(1) h3{
+    margin-left: -8px !important;
+    margin-bottom: 15px !important;
   }
   .moderaList:hover .moderaLinks {
     pointer-events: none !important;

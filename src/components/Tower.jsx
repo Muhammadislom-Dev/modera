@@ -1,6 +1,6 @@
 import React from "react";
 import TowerImage from "../assets/tower (1).png";
-import TowerImage2 from "../assets/tower2.png";
+import TowerImage2 from "../assets/tower3.png";
 import { Fade } from "react-reveal";
 import { t } from "i18next";
 import "./style.css";
