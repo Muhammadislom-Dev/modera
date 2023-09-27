@@ -16,7 +16,7 @@
 .contactName {
   overflow: auto;
   animation: typing 7s steps(50, end), blink-caret 0.5s step-end;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
 }
 
 @keyframes typing {
@@ -111,7 +111,8 @@
   left: 25px;
   transform: translateY(-32%);
   border-radius: 0px 50px;
-  background: #ffd2d7;
+  background: #fff;
+  box-shadow: 6px 4px 23px -7px rgba(0, 0, 0, 0.25);
   padding-top: 72px;
   padding-bottom: 42px;
   padding-left: 50px;
@@ -131,8 +132,8 @@
 
 .headerForm button {
   border-radius: 50px;
-  border: 1px solid #40128b;
-  color: #40128b;
+  border: 1px solid #291844;
+  color: #2a1844;
   text-align: center;
   font-family: Vocal, sans-serif;
   font-size: 36px;
@@ -152,12 +153,12 @@
 }
 
 .headerForm button:hover {
-  background-color: #8062d6;
+  background-color: #291844;
   color: #ffd2d7;
 }
 
 .headerFormName {
-  color: #40128b;
+  color: #2a1844;
   text-align: center;
   font-family: Vocal, sans-serif;
   font-size: 48px;
@@ -200,11 +201,11 @@
   outline: none;
   padding: 8px 15px;
   border: none;
-  border-bottom: 1px solid #40128b;
+  border-bottom: 1px solid #291844;
   background-color: transparent;
   width: 290px;
   font-size: 36px;
-  color: #40128b;
+  color: #2a1844;
 }
 
 .formInput::placeholder {
@@ -456,7 +457,7 @@
 }
 
 .sectionName {
-  color: #40128b;
+  color: #2a1844;
   font-family: Vocal, sans-serif;
   font-size: 64px;
   font-style: normal;
@@ -468,7 +469,7 @@
 }
 
 .sectionItem p {
-  color: #40128b;
+  color: #2a1844;
   font-family: Vocal, sans-serif;
   font-size: 18px;
   font-style: normal;

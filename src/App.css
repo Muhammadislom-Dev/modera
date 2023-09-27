@@ -13,6 +13,10 @@
   transition: 0.3s all ease-in-out;
 }
 
+.index-module_type__E-SaG::after {
+  content: "" !important;
+}
+
 .BgImageTwo {
   background-image: url("./assets/towerimage.jpg");
   background-repeat: no-repeat;
@@ -654,7 +658,7 @@
     margin: 10px !important;
   }
   body .businesItem:nth-child(even) {
-      margin-left: 150px !important;
+    margin-left: 150px !important;
   }
   body .businesItem:nth-child(even) {
     margin-top: 0 !important;
@@ -735,7 +739,7 @@
     width: 230px !important;
     height: 132px !important;
   }
-  .galeryImage:nth-child(even){
+  .galeryImage:nth-child(even) {
     margin-left: 150px !important;
   }
   .partnerList {
@@ -944,5 +948,4 @@
     width: 90%;
     padding: 5px;
   }
-  
 }

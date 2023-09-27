@@ -57,7 +57,15 @@ function HeaderForm() {
   }
   return (
     <div className="headerForm">
-      <h2 className="headerFormName">{t("form")}</h2>;
+      <h2 className="headerFormName">
+        <TypeAnimation
+          sequence={[t("form"), 2000]}
+          wrapper="span"
+          speed={220}
+          repeat={2}
+        />
+      </h2>
+      ;
       <form action="">
         <input
           value={nameValue}

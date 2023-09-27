@@ -18,6 +18,7 @@ import LayoutAbout from "./pages/Layout";
 import LayoutList from "./pages/LayoutList/LayoutList";
 import Loader from "./components/Loader";
 import AOS from "aos";
+import { TypeAnimation } from "react-type-animation";
 import "aos/dist/aos.css";
 
 function App() {
