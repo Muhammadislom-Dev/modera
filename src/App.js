@@ -17,10 +17,18 @@ import { Route, Routes } from "react-router-dom";
 import LayoutAbout from "./pages/Layout";
 import LayoutList from "./pages/LayoutList/LayoutList";
 import Loader from "./components/Loader";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [open, setOpen] = useState(false);
   const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);

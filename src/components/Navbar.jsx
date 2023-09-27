@@ -15,9 +15,7 @@ function Navbar({ setOpen, open }) {
     window.location.reload();
   };
   return (
-    <div
-      style={{ backgroundColor: `${open === false ? "" : "#40128B"}` }}
-      className="navbar">
+    <div className="navbar-container">
       <div className="container">
         <div className="navbarList">
           <Link to="/">

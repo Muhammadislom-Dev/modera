@@ -56,11 +56,8 @@ function HeaderForm() {
     }
   }
   return (
-    <div data-aos="fade-up" data-aos-duration="3000" className="headerForm">
-      <h2 className="headerFormName">
-        <TypeAnimation sequence={[t("form"), 1200, ""]} repeat={Infinity} />
-      </h2>
-      ;
+    <div className="headerForm">
+      <h2 className="headerFormName">{t("form")}</h2>;
       <form action="">
         <input
           value={nameValue}

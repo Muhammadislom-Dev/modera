@@ -1,5 +1,4 @@
 import React from "react";
-import Icon from "./Icon";
 import { data } from "./data";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -29,16 +28,17 @@ function Busines() {
           <SwiperSlide className="businesItem">
             <div key={evt.id}>
               <img src={evt.img} alt="" />
-              <h2 className="businesName">
-                {" "}
-                {evt[`title_${i18next.language}`]}
-              </h2>
-              <p className="businesText">{evt[`text_${i18next.language}`]}</p>
+              <div className="busines-item">
+                <h2 className="businesName">
+                  {evt[`title_${i18next.language}`]}
+                </h2>
+                <p className="businesText">{evt[`text_${i18next.language}`]}</p>
+              </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <Swiper
+      {/* <Swiper
         effect={"cube"}
         grabCursor={true}
         cubeEffect={{
@@ -61,9 +61,7 @@ function Busines() {
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>
-
-      <Icon />
+      </Swiper> */}
     </div>
   );
 }

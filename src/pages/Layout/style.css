@@ -1,9 +1,9 @@
 .navbar {
-  background: #40128b;
+  background: #291844;
 }
 .about {
-  border-radius: 0px 0px 90px 90px;
-  background-color: #8062d6;
+  background: #291844;
+  box-shadow: 0px -9px 37px 0px rgba(128, 98, 214, 0.25);
   padding: 90px 0;
 }
 
