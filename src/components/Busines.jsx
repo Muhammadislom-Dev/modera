@@ -9,6 +9,7 @@ import "swiper/css/effect-cards";
 import { FreeMode, Scrollbar, Mousewheel } from "swiper";
 import { useTranslation } from "react-i18next";
 import "./style.css";
+import { Fade } from "react-reveal";
 
 function Busines() {
   const [t, i18next] = useTranslation();
@@ -41,43 +42,23 @@ function Busines() {
       <div className="mySwiperResponsive">
         {data.map((evt) => (
           <div className="businesItem">
-            <div key={evt.id}>
-              <img src={evt.img} alt="" />
-              <div className="busines-items">
-                <h2 className="businesName">
-                  {" "}
-                  {evt[`title_${i18next.language}`]}
-                </h2>
-                <p className="businesText">{evt[`text_${i18next.language}`]}</p>
+            <Fade bottom>
+              <div key={evt.id}>
+                <img src={evt.img} alt="" />
+                <div className="busines-items">
+                  <h2 className="businesName">
+                    {" "}
+                    {evt[`title_${i18next.language}`]}
+                  </h2>
+                  <p className="businesText">
+                    {evt[`text_${i18next.language}`]}
+                  </p>
+                </div>
               </div>
-            </div>
+            </Fade>
           </div>
         ))}
       </div>
-      {/* <Swiper
-        effect={"cube"}
-        grabCursor={true}
-        cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        }}
-        pagination={true}
-        className="mySwiperResponsive">
-        {data?.map((evt) => (
-          <SwiperSlide className="businesItem">
-            <div key={evt.id}>
-              <img src={evt.img} alt="" />
-              <h2 className="businesName">
-                {" "}
-                {evt[`title_${i18next.language}`]}
-              </h2>
-              <p className="businesText">{evt[`text_${i18next.language}`]}</p>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper> */}
     </div>
   );
 }
