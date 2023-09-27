@@ -638,31 +638,30 @@
   }
 
   .businesItem {
-    width: 100% !important;
+    width: 250px !important;
   }
   .busines p {
     width: 90% !important;
-    font-size: 16px !important;
-    line-height: 20px !important;
-    padding: 15px !important;
-    border-radius: 10px !important;
-    margin: 10px auto !important;
+    font-size: 10px !important;
+    line-height: 16px !important;
+    margin-top: 0 !important;
   }
   .busines {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
   body .businesItem {
-    margin: 0 !important;
+    margin: 10px !important;
+  }
+  body .businesItem:nth-child(even) {
+      margin-left: 150px !important;
   }
   body .businesItem:nth-child(even) {
     margin-top: 0 !important;
   }
 
   .busines h2 {
-    font-size: 30px !important;
-    line-height: 35px !important;
-    margin-top: -10px !important;
+    font-size: 16px !important;
   }
 
   .mySwiper {
@@ -735,6 +734,9 @@
   .galeryImage {
     width: 230px !important;
     height: 132px !important;
+  }
+  .galeryImage:nth-child(even){
+    margin-left: 150px !important;
   }
   .partnerList {
     flex-wrap: wrap;
@@ -830,7 +832,8 @@
     top: 5.5% !important;
   }
   .busines img {
-    width: 100% !important;
+    width: 220px !important;
+    height: 120px !important;
   }
   .iconItem,
   .iconItems {
@@ -934,4 +937,12 @@
     display: flex;
     justify-content: flex-end;
   }
+  .busines-items {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 7px 7px 8px 0px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    padding: 5px;
+  }
+  
 }

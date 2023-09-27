@@ -7,6 +7,10 @@
   display: flex !important;
 }
 
+.galleryLists {
+  display: none !important;
+}
+
 .layoutName,
 .galleryName,
 .contactName {

@@ -38,6 +38,22 @@ function Busines() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="mySwiperResponsive">
+        {data.map((evt) => (
+          <div className="businesItem">
+            <div key={evt.id}>
+              <img src={evt.img} alt="" />
+              <div className="busines-items">
+                <h2 className="businesName">
+                  {" "}
+                  {evt[`title_${i18next.language}`]}
+                </h2>
+                <p className="businesText">{evt[`text_${i18next.language}`]}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
       {/* <Swiper
         effect={"cube"}
         grabCursor={true}
