@@ -1,5 +1,5 @@
 .navbar {
-  background: #291844;
+  background: #1c1948;
 }
 .about {
   background: #291844;
@@ -19,7 +19,7 @@
 }
 
 .aboutTop {
-  background: #ffd2d7;
+  background: #fff;
   width: 560px;
   height: 300px;
   padding: 30px;
@@ -29,7 +29,7 @@
   justify-content: space-between;
 }
 .aboutTop p {
-  color: #40128b;
+  color: #2a1844;
   font-family: Vocal, sans-serif;
   font-size: 32px;
   font-style: normal;
@@ -44,7 +44,7 @@
 }
 
 .aboutTop h3 {
-  color: #40128b;
+  color: #2a1844;
   leading-trim: both;
   text-edge: cap;
   font-family: Vocal, sans-serif;
@@ -59,7 +59,7 @@
 
 .aboutBottom {
   border-radius: 30px;
-  background: #ffd2d7;
+  background: #fff;
   width: 475.562px;
   height: 263px;
   display: flex;
@@ -72,7 +72,7 @@
 }
 
 .aboutItem {
-  border-radius: 0px 20px;
+  border-radius: 0px 10px;
   background: #fff;
   box-shadow: 11px 11px 24px 0px rgba(0, 0, 0, 0.25);
   width: 193.365px;
@@ -96,9 +96,9 @@
   outline: none;
   border: none;
   background-color: transparent;
-  border-bottom: 3px solid #8062d6;
+  border-bottom: 3px solid #2a1844;
   padding: 8px 12px;
-  color: #40128b;
+  color: #2a1844;
   font-family: Vocal, sans-serif;
   font-size: 36px;
   margin: 25px 0;
@@ -106,7 +106,7 @@
 }
 
 .form input::placeholder {
-  color: #ffd2d7;
+  color: #2a1844;
   font-family: Vocal, sans-serif;
   font-size: 36px;
   font-style: normal;
@@ -133,7 +133,7 @@
 }
 
 .bottom {
-  background: #40128b;
+  background: #2a1844;
   padding: 27px 0;
 }
 

@@ -24,6 +24,7 @@ import "aos/dist/aos.css";
 function App() {
   const [open, setOpen] = useState(false);
   const [loader, setLoader] = useState(true);
+  const [open1, setOpen1] = useState(false);
 
   useEffect(() => {
     AOS.init();
@@ -75,7 +76,11 @@ function App() {
             path="/layout-about/:id"
             element={
               <>
-                <LayoutAbout />
+                {open === false ? (
+                  <LayoutAbout open={open1} setOpen={setOpen1} />
+                ) : (
+                  <HeaderModal />
+                )}
               </>
             }
           />

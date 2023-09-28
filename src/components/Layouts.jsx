@@ -4,6 +4,7 @@ import Layer from "../assets/layer.png";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
+import { Zoom } from "react-reveal";
 import "./style.css";
 
 function Layouts() {
@@ -20,7 +21,16 @@ function Layouts() {
   return (
     <div id="layout" className="layouts">
       <div className="container container-fluid">
-        <h2 className="layoutName">{t("hello2")}</h2>
+        <h2 style={{ display: "flex" }} className="layoutName">
+          {/* {t("hello2")} */}
+          <Zoom cascade>L</Zoom>
+          <Zoom cascade>A</Zoom>
+          <Zoom cascade>Y</Zoom>
+          <Zoom cascade>O</Zoom>
+          <Zoom cascade>U</Zoom>
+          <Zoom cascade>T</Zoom>
+          <Zoom cascade>S</Zoom>
+        </h2>
         <div className="layoutsList">
           <div className="layoutsItem">
             {category?.map((evt) => (

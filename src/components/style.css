@@ -2,6 +2,16 @@
   font-family: Vocal, sans-serif;
   src: url("../fonts/Vocal\ Regular.otf");
 }
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  z-index: 10010;
+  top: 0;
+}
+
+.active {
+  background: #2a1844;
+}
 
 .slick-slide img {
   display: flex !important;
@@ -11,12 +21,13 @@
   display: none !important;
 }
 
-.layoutName,
-.galleryName,
-.contactName {
+.galleryName {
   overflow: auto;
-  animation: typing 7s steps(50, end), blink-caret 0.5s step-end;
+  animation: typing 5.5s steps(50, end), blink-caret 0.3s step-end;
   animation-iteration-count: 2;
+}
+.companyText p {
+  margin-top: 30px;
 }
 
 @keyframes typing {
@@ -80,7 +91,7 @@
 
 .navbarLink {
   border-radius: 50px;
-  border: 1px solid #ffd2d7;
+  border: 1px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,7 +267,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: 92.5%;
-  width: 800px !important;
+  width: 600px !important;
 }
 
 .partner {

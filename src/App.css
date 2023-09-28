@@ -13,6 +13,11 @@
   transition: 0.3s all ease-in-out;
 }
 
+.slick-next,
+.slick-prev {
+  display: none !important;
+}
+
 .index-module_type__E-SaG::after {
   content: "" !important;
 }
@@ -28,7 +33,7 @@
 .contactList {
   display: none !important;
   border-radius: 25px 25px 0px 0px;
-  background: #ffd2d7;
+  background: #fff;
   padding: 15px 10px;
   display: flex;
   width: 90%;
@@ -144,7 +149,7 @@
 
 .custom-dropdown-toggle {
   border-radius: 50px;
-  border: 1px solid #ffd2d7 !important;
+  border: 1px solid #fff !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,8 +168,8 @@
   position: absolute;
   top: 8.7%;
   margin-left: 3px;
-  border-radius: 8px;
-  background-color: #ffd2d7;
+  border-radius: 10px;
+  background: #fff;
 }
 
 .custom-dropdown-item {
@@ -495,9 +500,6 @@
   body .aboutRight {
     width: 100% !important;
   }
-  .about {
-    border-radius: 0px 0px 40px 40px !important;
-  }
   .aboutTop h3 {
     font-size: 30px !important;
   }
@@ -658,7 +660,7 @@
     margin: 10px !important;
   }
   body .businesItem:nth-child(even) {
-    margin-left: 150px !important;
+    margin-left: 125px !important;
   }
   body .businesItem:nth-child(even) {
     margin-top: 0 !important;
@@ -947,5 +949,9 @@
     box-shadow: 7px 7px 8px 0px rgba(0, 0, 0, 0.15);
     width: 90%;
     padding: 5px;
+  }
+  .aboutBottom {
+    border-radius: 15px !important;
+    padding: 20px !important;
   }
 }

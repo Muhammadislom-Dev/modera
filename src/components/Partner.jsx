@@ -50,12 +50,6 @@ function Partner() {
           <img src={Asset4} alt="Icon 1" className="partnerIcon" />
           <img src={Asset5} alt="Icon 1" className="partnerIcon" />
           <img src={Asset6} alt="Icon 1" className="partnerIcon" />
-          <img src={Asset1} alt="Icon 1" className="partnerIcon" />
-          <img src={Asset2} alt="Icon 1" className="partnerIcon" />
-          <img src={Asset3} alt="Icon 1" className="partnerIcon" />
-          <img src={Asset4} alt="Icon 1" className="partnerIcon" />
-          <img src={Asset5} alt="Icon 1" className="partnerIcon" />
-          <img src={Asset6} alt="Icon 1" className="partnerIcon" />
         </Slider>
       </div>
     </div>

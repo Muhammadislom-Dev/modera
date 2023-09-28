@@ -5,10 +5,10 @@ import Navbar from "./Layout/Navbar";
 import Form from "./Layout/Form";
 import "../components/style.css";
 
-function LayoutAbout() {
+function LayoutAbout({ open, setOpen }) {
   return (
     <>
-      <Navbar />
+      <Navbar open={open} setOpen={setOpen} />
       <About />
       <Form />
       <div className="bottom">

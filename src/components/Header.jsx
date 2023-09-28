@@ -11,7 +11,7 @@ function Header({ setOpen, open }) {
       <div className="BgImage">
         <Navbar open={open} setOpen={setOpen} />
         <div className="header">
-          <div className="container">
+          <div className="container-fluid">
             <Fade left cascade>
               <div>
                 <h2 className="headerName">{t("multi")}</h2>

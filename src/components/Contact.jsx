@@ -1,17 +1,13 @@
 import React from "react";
 import MenuLogo from "../assets/menu-logo.png";
 import Modera from "../assets/modera.png";
-import Phone from "../assets/phone.svg";
-import Instagram from "../assets/instagram.svg";
-import Telegram from "../assets/telegram.svg";
-import Location from "../assets/location.svg";
-import Phone1 from "../assets/icon-phone.svg";
-import Facebook1 from "../assets/icon-facebook.svg";
-import Instagram1 from "../assets/icon-instragram.svg";
-import Telegram1 from "../assets/icon-telegram.svg";
-import Location1 from "../assets/icon-location.svg";
+import Phone1 from "../assets/img/icon-phone.svg";
+import Facebook1 from "../assets/img/icon-facebook.svg";
+import Instagram1 from "../assets/img/icon-instagram.svg";
+import Telegram1 from "../assets/img/icon-telegram.svg";
+import Location1 from "../assets/img/icon-location.svg";
 import { useTranslation } from "react-i18next";
-import { Fade } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 import "./style.css";
 
 function Contact() {
@@ -20,7 +16,17 @@ function Contact() {
     <>
       <div id="contact" className="contact">
         <div className="container">
-          <h2 className="contactName">{t("Contacts")}</h2>
+          {/* <h2 className="contactName">{t("Contacts")}</h2> */}
+          <h2 style={{ display: "flex" }} className="contactName">
+            <Zoom cascade>C</Zoom>
+            <Zoom cascade>O</Zoom>
+            <Zoom cascade>N</Zoom>
+            <Zoom cascade>T</Zoom>
+            <Zoom cascade>A</Zoom>
+            <Zoom cascade>C</Zoom>
+            <Zoom cascade>T</Zoom>
+            <Zoom cascade>S</Zoom>
+          </h2>
           <img src={MenuLogo} alt="Logo" className="menuLogo" />
           <Fade bottom>
             <div className="moderaItem">
@@ -55,7 +61,6 @@ function Contact() {
                   stroke-linejoin="round"
                 />
               </svg>
-              {/* <img src={Phone} alt="Phone" className="modera-icon" /> */}
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61550525660613&mibextid=LQQJ4d"
@@ -118,7 +123,6 @@ function Contact() {
                   stroke-linejoin="round"
                 />
               </svg>
-              {/* <img src={Instagram} alt="Phone" className="modera-icon" /> */}
             </a>
             <a href="https://t.me/moderatowers" className="moderaLink">
               <svg
@@ -140,7 +144,6 @@ function Contact() {
                   stroke-linejoin="round"
                 />
               </svg>
-              {/* <img src={Telegram} alt="Phone" className="modera-icon" /> */}
             </a>
             <a
               href="https://maps.app.goo.gl/81xuBj2eNQrri92d7"
@@ -171,7 +174,6 @@ function Contact() {
                   stroke-linejoin="round"
                 />
               </svg>
-              {/* <img src={Location} alt="Phone" className="modera-icon" /> */}
             </a>
 
             <a href="tel:+998940007777" className="moderaLinks">

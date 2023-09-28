@@ -2,6 +2,7 @@ import React from "react";
 import Tower from "../assets/tower.png";
 import { useTranslation } from "react-i18next";
 import "./style.css";
+import { Zoom } from "react-reveal";
 
 function Company() {
   const { t } = useTranslation();
@@ -10,7 +11,12 @@ function Company() {
       <div className="container container-fluid">
         <div className="companyList">
           <img src={Tower} alt="Modera Tower" className="companyImage" />
-          <p className="companyText">{t("companyText")}</p>
+          <p
+            className="companyText"
+            dangerouslySetInnerHTML={{
+              __html: t("companyText"),
+            }}
+          />
         </div>
       </div>
     </div>
