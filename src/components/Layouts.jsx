@@ -6,11 +6,40 @@ import axios from "axios";
 import { useTranslation } from "react-i18next";
 import { Zoom } from "react-reveal";
 import "./style.css";
+import "./animation.css";
 
 function Layouts() {
   const [t, i18next] = useTranslation();
   const [category, setCategory] = useState([]);
+  const [isVcdActive, setIsVcdActive] = useState(false);
+  useEffect(() => {
+    const fathEl = document.querySelector(".layoutName");
+    const childEls = fathEl?.querySelectorAll(".textspan");
 
+    const handleScroll = () => {
+      let scrolling = window.scrollY;
+      console.log(scrolling);
+      if (scrolling >= 3000) {
+        if (!isVcdActive) {
+          setIsVcdActive(true);
+          for (const el of childEls) {
+            el.classList.add("vcd");
+          }
+        }
+      } else {
+        if (isVcdActive) {
+          setIsVcdActive(false);
+          for (const el of childEls) {
+            el.classList.remove("vcd");
+          }
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   useEffect(() => {
     axios
       .get("https://modera.dipsag.uz/category/")
@@ -22,14 +51,13 @@ function Layouts() {
     <div id="layout" className="layouts">
       <div className="container container-fluid">
         <h2 style={{ display: "flex" }} className="layoutName">
-          {/* {t("hello2")} */}
-          <Zoom cascade>L</Zoom>
-          <Zoom cascade>A</Zoom>
-          <Zoom cascade>Y</Zoom>
-          <Zoom cascade>O</Zoom>
-          <Zoom cascade>U</Zoom>
-          <Zoom cascade>T</Zoom>
-          <Zoom cascade>S</Zoom>
+          {t("hello2")
+            .split("")
+            .map((char, index) => (
+              <span className="textspan" key={index}>
+                {char}
+              </span>
+            ))}{" "}
         </h2>
         <div className="layoutsList">
           <div className="layoutsItem">

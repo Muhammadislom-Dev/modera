@@ -9,9 +9,41 @@ import Location1 from "../assets/img/icon-location.svg";
 import { useTranslation } from "react-i18next";
 import { Fade, Zoom } from "react-reveal";
 import "./style.css";
+import { useEffect } from "react";
+import { useState } from "react";
+import "./animation.css";
 
 function Contact() {
   const { t } = useTranslation();
+  const [isVcdActive, setIsVcdActive] = useState(false);
+  useEffect(() => {
+    const fathEl = document.querySelector(".contactName");
+    const childEls = fathEl?.querySelectorAll(".textspan");
+
+    const handleScroll = () => {
+      let scrolling = window.scrollY;
+      console.log(scrolling);
+      if (scrolling >= 6300) {
+        if (!isVcdActive) {
+          setIsVcdActive(true);
+          for (const el of childEls) {
+            el.classList.add("vcd2");
+          }
+        }
+      } else {
+        if (isVcdActive) {
+          setIsVcdActive(false);
+          for (const el of childEls) {
+            el.classList.remove("vcd2");
+          }
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <div id="contact" className="contact">

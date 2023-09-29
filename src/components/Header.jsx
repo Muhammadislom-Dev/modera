@@ -3,9 +3,11 @@ import Navbar from "./Navbar";
 import { Fade } from "react-reveal";
 import { useTranslation } from "react-i18next";
 import "./style.css";
+import "./animation.css";
 
 function Header({ setOpen, open }) {
   const { t } = useTranslation();
+
   return (
     <>
       <div className="BgImage">

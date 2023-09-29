@@ -1,0 +1,180 @@
+.layoutName span {
+  opacity: 0;
+}
+
+.vcd {
+  animation: animateSP 1s 0s ease both;
+}
+
+.layoutName span:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.layoutName span:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.layoutName span:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.layoutName span:nth-child(4) {
+  animation-delay: 1.4s;
+}
+
+.layoutName span:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+.layoutName span:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
+.layoutName span:nth-child(7) {
+  animation-delay: 1.8s;
+}
+
+@keyframes animateSP {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.6) !important;
+    transform: scale(0.6);
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: scale(1) !important;
+    transform: scale(1);
+  }
+  77% {
+    opacity: 1;
+    -webkit-transform: scale(1) !important;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) !important;
+    transform: scale(1);
+  }
+}
+
+.galleryName span {
+  opacity: 0;
+}
+
+.vcd1 {
+  animation: animateSP1 1s 0s ease both;
+}
+
+.galleryName span:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.galleryName span:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.galleryName span:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.galleryName span:nth-child(4) {
+  animation-delay: 1.4s;
+}
+
+.galleryName span:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+.galleryName span:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
+.galleryName span:nth-child(7) {
+  animation-delay: 1.8s;
+}
+
+@keyframes animateSP1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.6) !important;
+    transform: scale(0.6);
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: scale(1) !important;
+    transform: scale(1);
+  }
+  77% {
+    opacity: 1;
+    -webkit-transform: scale(1) !important;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) !important;
+    transform: scale(1);
+  }
+}
+
+.contactName span {
+  opacity: 0;
+}
+
+.vcd2 {
+  animation: animateSP2 1s 0s ease both;
+}
+
+.contactName span:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.contactName span:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.contactName span:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.contactName span:nth-child(4) {
+  animation-delay: 1.4s;
+}
+
+.contactName span:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+.contactName span:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
+.contactName span:nth-child(7) {
+  animation-delay: 1.8s;
+}
+
+.contactName span:nth-child(8) {
+  animation-delay: 2s;
+}
+
+@keyframes animateSP2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.6) !important;
+    transform: scale(0.6);
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: scale(1) !important;
+    transform: scale(1);
+  }
+  77% {
+    opacity: 1;
+    -webkit-transform: scale(1) !important;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) !important;
+    transform: scale(1);
+  }
+}

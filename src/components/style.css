@@ -21,31 +21,8 @@
   display: none !important;
 }
 
-.galleryName {
-  overflow: auto;
-  animation: typing 5.5s steps(50, end), blink-caret 0.3s step-end;
-  animation-iteration-count: 2;
-}
 .companyText p {
   margin-top: 30px;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
 }
 
 .BgImage {
