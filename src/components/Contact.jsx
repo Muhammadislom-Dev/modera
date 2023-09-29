@@ -50,14 +50,13 @@ function Contact() {
         <div className="container">
           {/* <h2 className="contactName">{t("Contacts")}</h2> */}
           <h2 style={{ display: "flex" }} className="contactName">
-            <Zoom cascade>C</Zoom>
-            <Zoom cascade>O</Zoom>
-            <Zoom cascade>N</Zoom>
-            <Zoom cascade>T</Zoom>
-            <Zoom cascade>A</Zoom>
-            <Zoom cascade>C</Zoom>
-            <Zoom cascade>T</Zoom>
-            <Zoom cascade>S</Zoom>
+            {t("contact")
+              .split("")
+              .map((char, index) => (
+                <span className="textspan" key={index}>
+                  {char}
+                </span>
+              ))}{" "}
           </h2>
           <img src={MenuLogo} alt="Logo" className="menuLogo" />
           <Fade bottom>

@@ -4,6 +4,8 @@ import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
 import "./style.css";
+import { useEffect } from "react";
+import "./animation.css";
 
 function HeaderForm() {
   const { t } = useTranslation();
@@ -11,6 +13,36 @@ function HeaderForm() {
   const [numberValue, setNumberValue] = useState("");
   const [, setInvalidName] = useState(false);
   const [, setInvalidNumber] = useState(false);
+
+  const [isVcdActive, setIsVcdActive] = useState(false);
+  useEffect(() => {
+    const fathEl = document.querySelector(".headerFormName");
+    const childEls = fathEl?.querySelectorAll(".textspan");
+
+    const handleScroll = () => {
+      let scrolling = window.scrollY;
+      console.log(scrolling);
+      if (scrolling >= 140) {
+        if (!isVcdActive) {
+          setIsVcdActive(true);
+          for (const el of childEls) {
+            el.classList.add("vcd3");
+          }
+        }
+      } else {
+        if (isVcdActive) {
+          setIsVcdActive(false);
+          for (const el of childEls) {
+            el.classList.remove("vcd3");
+          }
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   function changeNumber(item) {
     setNumberValue(item);
@@ -58,12 +90,19 @@ function HeaderForm() {
   return (
     <div className="headerForm">
       <h2 className="headerFormName">
-        <TypeAnimation
+        {/* <TypeAnimation
           sequence={[t("form"), 2000]}
           wrapper="span"
           speed={220}
           repeat={2}
-        />
+        /> */}
+        {t("form")
+          .split("")
+          .map((char, index) => (
+            <span className="textspan" key={index}>
+              {char}
+            </span>
+          ))}{" "}
       </h2>
       ;
       <form action="">
