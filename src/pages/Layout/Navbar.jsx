@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Layout.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 import "./style.css";
 import Language from "../../components/Language";
@@ -8,7 +8,6 @@ import { useTranslation } from "react-i18next";
 
 function Navbar({ open, handleOpen, handleClose }) {
   const { t } = useTranslation();
-  const navigate = useNavigate();
 
   return (
     <div className="navbar">

@@ -3,11 +3,10 @@ import Logo from "../assets/logo.png";
 import twodote from "../assets/twodote.svg";
 import { useTranslation } from "react-i18next";
 import Language from "./Language";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 function Navbar({ handleOpen, open, handleClose }) {
-  const navigate = useNavigate();
   const [navbar, setNavbar] = useState(false);
   const { t } = useTranslation();
 
