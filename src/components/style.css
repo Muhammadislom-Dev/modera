@@ -9,6 +9,11 @@
   top: 0;
 }
 
+.header-top {
+  position: absolute;
+  bottom: 120px;
+}
+
 .active {
   background: #2a1844;
 }
@@ -332,7 +337,7 @@
 }
 
 .section {
-  padding-bottom: 80px;
+  padding-bottom: 180px;
 }
 
 .sectionItem {
@@ -471,67 +476,62 @@
 
 .towerImage {
   position: relative;
-  left: 10%;
+  width: 100%;
 }
 
 .towerOne {
-  position: relative;
-  left: -60px;
-  transform: translateX(100%);
-  top: 17%;
+  position: absolute;
+  right: 0;
+  top: 18%;
 }
 
 .towerTwo {
-  position: relative;
-  left: -60px;
-  transform: translateX(100%);
-  top: 20%;
+  position: absolute;
+  right: 0;
+  top: 24.2%;
 }
 
 .towerThree {
-  position: relative;
-  left: -60px;
-  transform: translateX(100%);
-  top: 36%;
+  position: absolute;
+  right: 0;
+  top: 44.7%;
 }
 
 .towerFour {
-  position: relative;
-  left: -60px;
-  transform: translateX(100%);
-  top: 51%;
-  width: 220px;
+  position: absolute;
+  right: 0;
+  top: 65.8%;
 }
 
 .towerFive {
-  position: relative;
-  left: -60px;
-  transform: translateX(100%);
-  top: 53%;
+  position: absolute;
+  right: 0;
+  top: 69.5%;
 }
 
 .towerSix {
-  position: relative;
-  left: -60px;
-  transform: translateX(100%);
-  top: 55%;
+  position: absolute;
+  right: 0;
+  top: 76%;
 }
 
 .towerSeven {
-  position: relative;
-  left: -60px;
-  transform: translateX(100%);
-  top: 60%;
+  position: absolute;
+  right: 0;
+  top: 85.5%;
 }
 
 .towerEight {
+  position: absolute;
+  right: 0;
+  top: 90%;
+}
+.towerList {
+  width: 40%;
   position: relative;
-  left: -60px;
-  transform: translateX(100%);
-  top: 62%;
 }
 
-.towerList span {
+.towerList p {
   color: #2a1844;
   text-align: right;
   font-family: Vocal, sans-serif;
@@ -539,6 +539,8 @@
   font-style: normal;
   font-weight: 300;
   line-height: 92.5%;
+  margin-top: -8px;
+  margin-bottom: 0;
 }
 
 .towerList h3 {
@@ -549,7 +551,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 92.5%;
-  margin-top: -8px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .towerList div {
@@ -559,7 +562,6 @@
 }
 
 .layouts {
-  /* border-radius: 80px 80px 0px 0px; */
   background: #291844;
   padding-top: 92px;
   padding-bottom: 33px;
@@ -662,8 +664,8 @@
 }
 
 .busines img {
-  width: 480px;
-  height: 274px;
+  width: 100%;
+  height: auto;
   border-radius: 0px 0px 30px 0px;
   background: linear-gradient(0deg, #fff 0%, rgba(217, 217, 217, 0) 34.41%);
 }
@@ -686,7 +688,7 @@
   box-shadow: 7px 7px 8px 0px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   padding: 25px 35px;
-  width: 464px;
+  width: 100%;
 }
 
 .mySwiper .swiper-slide:nth-child(even) {

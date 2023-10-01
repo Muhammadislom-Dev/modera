@@ -14,13 +14,15 @@ function Header({ handleClose, open, handleOpen }) {
         <Navbar open={open} handleClose={handleClose} handleOpen={handleOpen} />
         <div className="header">
           <div className="container-fluid">
-            <Fade left cascade>
-              <div>
-                <h2 className="headerName">{t("multi")}</h2>
-                <h2 className="headerName">{t("functional")}</h2>
-                <h2 className="headerName">{t("complex")}</h2>
-              </div>
-            </Fade>
+            <div className="header-top">
+              <Fade left cascade>
+                <div>
+                  <h2 className="headerName">{t("multi")}</h2>
+                  <h2 className="headerName">{t("functional")}</h2>
+                  <h2 className="headerName">{t("complex")}</h2>
+                </div>
+              </Fade>
+            </div>
           </div>
         </div>
       </div>
