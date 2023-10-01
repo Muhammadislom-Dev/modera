@@ -5,6 +5,7 @@ import BusinesFour from "../assets/group4.png";
 import BusinesFive from "../assets/group5.png";
 import BusinesSix from "../assets/group6.png";
 import BusinesSeven from "../assets/group7.png";
+import BusinesSeven1 from "../assets/group71.png";
 import BusinesEight from "../assets/group8.png";
 import BusinesNine from "../assets/group9.png";
 import BusinesTen from "../assets/group10.png";
@@ -102,7 +103,7 @@ export const data = [
       "You and your guests will be able to find a place for both relaxing in the shade and sunbathing.",
     text_uz:
       "Siz va sizning mehmonlaringiz soyada dam olish va quyoshda cho'milish uchun joy topa olasiz.",
-    img: BusinesSeven,
+    img: BusinesSeven1,
   },
   {
     id: 8,
@@ -115,7 +116,7 @@ export const data = [
       "For the convenience of residents and guests, we also offer restaurant services on the sixth floor of the complex.",
     text_uz:
       "Aholi va mehmonlarga qulaylik yaratish maqsadida majmuaning oltinchi qavatida restoran xizmatlarini ham taklif etamiz.",
-    img: BusinesEight,
+    img: BusinesSeven,
   },
   {
     id: 9,
@@ -128,7 +129,7 @@ export const data = [
       "Comfortable accommodation at Modera Towers is ideal for both young people and families with children.",
     text_uz:
       "Modera Towersdagi qulay turar joy ham yoshlar, ham bolali oilalar uchun ideal.",
-    img: BusinesNine,
+    img: BusinesEight,
   },
   {
     id: 10,
@@ -141,7 +142,7 @@ export const data = [
       "Modera Towers also offers business owners and residents 242 beds with 24-hour surveillance.",
     text_uz:
       "Modera Towers shuningdek, biznes egalari va aholisiga 24 soatlik kuzatuvga ega 242 ta yotoqni taklif etadi.",
-    img: BusinesTen,
+    img: BusinesNine,
   },
   {
     id: 11,
@@ -154,7 +155,7 @@ export const data = [
       "One of the most important advantages is that a modern sports club is located right in the Modera Towers complex.",
     text_uz:
       "Eng muhim afzalliklaridan biri shundaki, zamonaviy sport klubi aynan Modera Towers majmuasida joylashgan.",
-    img: BusinesEleven,
+    img: BusinesTen,
   },
   {
     id: 12,
@@ -167,7 +168,7 @@ export const data = [
       "The complex is intended for people who care about their health and save precious time.",
     text_uz:
       "Majmua o'z salomatligi haqida qayg'uradigan va qimmatli vaqtni tejaydigan odamlar uchun mo'ljallangan.",
-    img: BusinesTwelf,
+    img: BusinesEleven,
   },
   {
     id: 13,
@@ -180,7 +181,7 @@ export const data = [
       "The outdoor and indoor pools will be equipped with a modern water purification system and an area with sun loungers",
     text_uz:
       "Ochiq va yopiq basseynlar zamonaviy suvni tozalash tizimi va quyosh uchun stullar bilan jihozlangan maydon bilan jihozlanadi",
-    img: BusinesThirty,
+    img: BusinesTwelf,
   },
   {
     id: 14,
@@ -190,6 +191,6 @@ export const data = [
     text_ru: "Modera Towers предлагает крытый бассейн на шестом этаже.",
     text_uz: "Modera Towers oltinchi qavatda yopiq basseynni taklif etadi.",
     text_en: "Modera Towers offers an indoor pool on the sixth floor.",
-    img: BusinesFive,
+    img: BusinesThirty,
   },
 ];
