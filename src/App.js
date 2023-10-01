@@ -27,6 +27,22 @@ function App() {
   const [loader, setLoader] = useState(true);
   const [open1, setOpen1] = useState(false);
 
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleOpen1 = () => {
+    setOpen1(true);
+  };
+
+  const handleClose1 = () => {
+    setOpen1(false);
+  };
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -49,9 +65,16 @@ function App() {
             element={
               <>
                 {open === false ? (
-                  <Header open={open} setOpen={setOpen} />
+                  <Header
+                    open={open}
+                    handleOpen={handleOpen}
+                    handleClose={handleClose}
+                  />
                 ) : (
-                  <HeaderModal />
+                  <HeaderModal
+                    handleOpen={handleOpen}
+                    handleClose={handleClose}
+                  />
                 )}
                 {open === false ? <HeaderForm /> : ""}
                 <Section />
@@ -69,7 +92,18 @@ function App() {
             path="/layout/:id"
             element={
               <>
-                <LayoutList />
+                {open1 === false ? (
+                  <LayoutList
+                    open={open1}
+                    handleOpen={handleOpen1}
+                    handleClose={handleClose1}
+                  />
+                ) : (
+                  <HeaderModal
+                    handleOpen={handleOpen1}
+                    handleClose={handleClose1}
+                  />
+                )}
               </>
             }
           />
@@ -77,10 +111,17 @@ function App() {
             path="/layout-about/:id"
             element={
               <>
-                {open === false ? (
-                  <LayoutAbout open={open1} setOpen={setOpen1} />
+                {open1 === false ? (
+                  <LayoutAbout
+                    open={open1}
+                    handleOpen={handleOpen1}
+                    handleClose={handleClose1}
+                  />
                 ) : (
-                  <HeaderModal />
+                  <HeaderModal
+                    handleOpen={handleOpen1}
+                    handleClose={handleClose1}
+                  />
                 )}
               </>
             }

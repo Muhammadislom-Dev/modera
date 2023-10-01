@@ -5,7 +5,7 @@ import Navbar from "../Layout/Navbar";
 import { Link, useParams } from "react-router-dom";
 import "../Layout/style.css";
 
-function LayoutList() {
+function LayoutList({ open, handleClose, handleOpen }) {
   const { id } = useParams();
   const [layout, setLayout] = useState([]);
 
@@ -19,7 +19,7 @@ function LayoutList() {
 
   return (
     <>
-      <Navbar />
+      <Navbar open={open} handleClose={handleClose} handleOpen={handleOpen} />
       <div className="layout-list">
         <div className="container">
           {layout.map((evt) => (

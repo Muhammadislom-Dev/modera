@@ -3,11 +3,11 @@ import Navbar from "./Navbar";
 import { useTranslation } from "react-i18next";
 import "./style.css";
 
-function HeaderModal() {
+function HeaderModal({ handleOpen, handleClose }) {
   const { t } = useTranslation();
   return (
     <div className="headermodal">
-      <Navbar />
+      <Navbar handleOpen={handleOpen} handleClose={handleClose} />
       <div className="container container-fluid">
         <div className="headerModalList">
           <h1>

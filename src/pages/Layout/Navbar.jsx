@@ -6,16 +6,10 @@ import "./style.css";
 import Language from "../../components/Language";
 import { useTranslation } from "react-i18next";
 
-function Navbar({ open, setOpen }) {
+function Navbar({ open, handleOpen, handleClose }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const handleOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    // window.location.reload();
-    navigate("/");
-  };
+
   return (
     <div className="navbar">
       <div className="container">

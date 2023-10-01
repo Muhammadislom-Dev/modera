@@ -5,13 +5,13 @@ import { useTranslation } from "react-i18next";
 import "./style.css";
 import "./animation.css";
 
-function Header({ setOpen, open }) {
+function Header({ handleClose, open, handleOpen }) {
   const { t } = useTranslation();
 
   return (
     <>
       <div className="BgImage">
-        <Navbar open={open} setOpen={setOpen} />
+        <Navbar open={open} handleClose={handleClose} handleOpen={handleOpen} />
         <div className="header">
           <div className="container-fluid">
             <Fade left cascade>
@@ -25,7 +25,7 @@ function Header({ setOpen, open }) {
         </div>
       </div>
       <div className="BgImageTwo">
-        <Navbar open={open} setOpen={setOpen} />
+        <Navbar open={open} handleClose={handleClose} handleOpen={handleOpen} />
         <div className="header">
           <div className="container">
             <Fade left cascade>
