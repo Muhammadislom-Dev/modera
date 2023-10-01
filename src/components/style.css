@@ -799,8 +799,11 @@
 }
 
 .headerModalList {
+  position: absolute;
+  bottom: 50px;
   display: flex;
   justify-content: space-between;
+  gap: 120px;
 }
 
 .headerModalItem {
