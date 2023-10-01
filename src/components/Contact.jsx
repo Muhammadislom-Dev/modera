@@ -372,9 +372,9 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="footer">
+      {/* <div className="footer">
         <a href="tel:+998901693527">{t("hello20")}</a>
-      </div>
+      </div> */}
     </>
   );
 }
