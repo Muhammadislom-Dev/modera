@@ -23,7 +23,7 @@ function Contact() {
     const handleScroll = () => {
       let scrolling = window.scrollY;
       console.log(scrolling);
-      if (scrolling >= 6300) {
+      if (scrolling >= 6300 || scrolling >= 6000 || scrolling >= 7400) {
         if (!isVcdActive) {
           setIsVcdActive(true);
           for (const el of childEls) {
@@ -48,7 +48,6 @@ function Contact() {
     <>
       <div id="contact" className="contact">
         <div className="container">
-          {/* <h2 className="contactName">{t("Contacts")}</h2> */}
           <h2 style={{ display: "flex" }} className="contactName">
             {t("contact")
               .split("")

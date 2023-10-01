@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
-import { TypeAnimation } from "react-type-animation";
 import "./style.css";
 import { useEffect } from "react";
 import "./animation.css";
@@ -21,8 +20,8 @@ function HeaderForm() {
 
     const handleScroll = () => {
       let scrolling = window.scrollY;
-      console.log(scrolling);
-      if (scrolling >= 140) {
+      console.log(scrolling)
+      if (scrolling >= 140 || scrolling >= 500) {
         if (!isVcdActive) {
           setIsVcdActive(true);
           for (const el of childEls) {
@@ -90,12 +89,6 @@ function HeaderForm() {
   return (
     <div className="headerForm">
       <h2 className="headerFormName">
-        {/* <TypeAnimation
-          sequence={[t("form"), 2000]}
-          wrapper="span"
-          speed={220}
-          repeat={2}
-        /> */}
         {t("form")
           .split("")
           .map((char, index) => (

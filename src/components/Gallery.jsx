@@ -21,7 +21,7 @@ function Gallery() {
 
     const handleScroll = () => {
       let scrolling = window.scrollY;
-      if (scrolling >= 3800) {
+      if (scrolling >= 3800 || scrolling >= 5300) {
         if (!isVcdActive) {
           setIsVcdActive(true);
           for (const el of childEls) {
