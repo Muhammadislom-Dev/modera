@@ -31,19 +31,27 @@ function About() {
                 <h3>{layout.name}</h3>
                 <span>
                   <p>Hall</p>
-                  <p>{layout.hall} m</p>
+                  <p>
+                    {layout.hall} m<sup style={{ fontSize: "16px" }}>2</sup>
+                  </p>
                 </span>
                 <span>
                   <p>Bedroom</p>
-                  <p>{layout.bedroom} m</p>
+                  <p>
+                    {layout.bedroom} m<sup style={{ fontSize: "16px" }}>2</sup>
+                  </p>
                 </span>
                 <span>
                   <p>Hallway</p>
-                  <p>{layout.hallway} m</p>
+                  <p>
+                    {layout.hallway} m<sup style={{ fontSize: "16px" }}>2</sup>
+                  </p>
                 </span>
-                <span>
+                <span style={{ marginBottom: "10px" }}>
                   <p>Bathroom</p>
-                  <p>{layout.bethroom} m</p>
+                  <p>
+                    {layout.bethroom} m<sup style={{ fontSize: "16px" }}>2</sup>
+                  </p>
                 </span>
               </div>
               <div className="aboutBottom">

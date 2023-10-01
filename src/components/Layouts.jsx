@@ -18,7 +18,7 @@ function Layouts() {
 
     const handleScroll = () => {
       let scrolling = window.scrollY;
-      if (scrolling >= 3000 || scrolling >= 2800 || scrolling >= 4600) {
+      if (scrolling >= 2900 || scrolling >= 2800 || scrolling >= 4600) {
         if (!isVcdActive) {
           setIsVcdActive(true);
           for (const el of childEls) {

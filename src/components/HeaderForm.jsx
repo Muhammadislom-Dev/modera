@@ -12,7 +12,6 @@ function HeaderForm() {
   const [numberValue, setNumberValue] = useState("");
   const [, setInvalidName] = useState(false);
   const [, setInvalidNumber] = useState(false);
-
   const [isVcdActive, setIsVcdActive] = useState(false);
   useEffect(() => {
     const fathEl = document.querySelector(".headerFormName");
@@ -73,11 +72,9 @@ function HeaderForm() {
         }
       ).then(
         (success) => {
-          console.log("send message");
           toast.success("Sizning xabaringiz muvaffaqiyatli yuborildi!");
         },
         (error) => {
-          console.log(error);
         }
       );
 

@@ -40,12 +40,9 @@ function Form() {
         }
       ).then(
         (success) => {
-          console.log("send message");
           toast.success("Sizning xabaringiz muvaffaqiyatli yuborildi!");
         },
-        (error) => {
-          console.log(error);
-        }
+        (error) => {}
       );
 
       setNameValue("");

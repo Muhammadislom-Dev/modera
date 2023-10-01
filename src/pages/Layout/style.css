@@ -41,6 +41,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 10px 0;
+  cursor: pointer;
 }
 
 .aboutTop h3 {
@@ -106,7 +107,7 @@
 }
 
 .form input::placeholder {
-  color: #2a1844;
+  color: rgba(42, 24, 68, 0.6);
   font-family: Vocal, sans-serif;
   font-size: 36px;
   font-style: normal;
@@ -133,7 +134,8 @@
 }
 
 .bottom {
-  background: #2a1844;
+  background: #291844;
+  box-shadow: 0px -9px 37px 0px rgba(128, 98, 214, 0.25);
   padding: 27px 0;
 }
 
