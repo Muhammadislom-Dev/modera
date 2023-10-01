@@ -74,8 +74,7 @@ function HeaderForm() {
         (success) => {
           toast.success("Sizning xabaringiz muvaffaqiyatli yuborildi!");
         },
-        (error) => {
-        }
+        (error) => {}
       );
 
       setNameValue("");
@@ -93,7 +92,6 @@ function HeaderForm() {
             </span>
           ))}{" "}
       </h2>
-      ;
       <form action="">
         <input
           value={nameValue}
