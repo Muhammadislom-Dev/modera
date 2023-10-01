@@ -21,7 +21,6 @@ function Busines() {
   useEffect(() => {
     const handleScroll = () => {
       let scrolling = window.scrollY;
-      console.log(scrolling);
       if (
         scrolling >= 2500 ||
         scrolling >= 2200 ||

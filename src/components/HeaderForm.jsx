@@ -20,7 +20,6 @@ function HeaderForm() {
 
     const handleScroll = () => {
       let scrolling = window.scrollY;
-      console.log(scrolling)
       if (scrolling >= 140 || scrolling >= 500) {
         if (!isVcdActive) {
           setIsVcdActive(true);

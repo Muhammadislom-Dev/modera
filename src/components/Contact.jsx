@@ -22,7 +22,6 @@ function Contact() {
 
     const handleScroll = () => {
       let scrolling = window.scrollY;
-      console.log(scrolling);
       if (scrolling >= 6300 || scrolling >= 6000 || scrolling >= 7400) {
         if (!isVcdActive) {
           setIsVcdActive(true);
