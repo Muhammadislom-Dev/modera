@@ -155,6 +155,19 @@
 .contactName span:nth-child(8) {
   animation-delay: 2s;
 }
+.contactName span:nth-child(9) {
+  animation-delay: 2.1s;
+}
+.contactName span:nth-child(10) {
+  animation-delay: 2.2s;
+}
+
+.contactName span:nth-child(11) {
+  animation-delay: 2.3s;
+}
+.contactName span:nth-child(12) {
+  animation-delay: 2.4s;
+}
 
 @keyframes animateSP2 {
   0% {
