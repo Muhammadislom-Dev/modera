@@ -8,7 +8,7 @@ function Company() {
   const { t } = useTranslation();
   return (
     <div id="about" className="company">
-      <div className="container container-fluid">
+      <div className="container container-maxWidth">
         <div className="companyList">
           <img src={Tower} alt="Modera Tower" className="companyImage" />
           <p

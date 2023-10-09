@@ -235,7 +235,8 @@
 .galeryImage {
   border-radius: 80px 0px;
   width: 48%;
-  height: 271px;
+  height: 340px;
+  object-fit: cover;
 }
 
 .company {
@@ -278,8 +279,8 @@
   position: relative;
   left: 0;
   transform: translateX(-27%);
-  width: 764px;
-  height: 749px;
+  width: 60%;
+  /* height: 749px; */
 }
 
 .contact {
