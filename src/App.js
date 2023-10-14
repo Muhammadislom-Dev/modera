@@ -56,78 +56,78 @@ function App() {
 
   return (
     <>
-      // {loader && <Loader />}
-      // <div className="App">
-      //   <ToastContainer />
-      //   <Routes>
-      //     <Route
-      //       path="/"
-      //       element={
-      //         <>
-      //           {open === false ? (
-      //             <Header
-      //               open={open}
-      //               handleOpen={handleOpen}
-      //               handleClose={handleClose}
-      //             />
-      //           ) : (
-      //             <HeaderModal
-      //               handleOpen={handleOpen}
-      //               handleClose={handleClose}
-      //             />
-      //           )}
-      //           {open === false ? <HeaderForm /> : ""}
-      //           <Section />
-      //           <Tower />
-      //           <Busines />
-      //           <Layouts />
-      //           <Gallery />
-      //           <Company />
-      //           <Partner />
-      //           <Contact />
-      //         </>
-      //       }
-      //     />
-      //     <Route
-      //       path="/layout/:id"
-      //       element={
-      //         <>
-      //           {open1 === false ? (
-      //             <LayoutList
-      //               open={open1}
-      //               handleOpen={handleOpen1}
-      //               handleClose={handleClose1}
-      //             />
-      //           ) : (
-      //             <HeaderModal
-      //               handleOpen={handleOpen1}
-      //               handleClose={handleClose1}
-      //             />
-      //           )}
-      //         </>
-      //       }
-      //     />
-      //     <Route
-      //       path="/layout-about/:id"
-      //       element={
-      //         <>
-      //           {open1 === false ? (
-      //             <LayoutAbout
-      //               open={open1}
-      //               handleOpen={handleOpen1}
-      //               handleClose={handleClose1}
-      //             />
-      //           ) : (
-      //             <HeaderModal
-      //               handleOpen={handleOpen1}
-      //               handleClose={handleClose1}
-      //             />
-      //           )}
-      //         </>
-      //       }
-      //     />
-      //   </Routes>
-      // </div>
+      {/* {loader && <Loader />} */}
+      {/* <div className="App">
+        <ToastContainer />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                {open === false ? (
+                  <Header
+                    open={open}
+                    handleOpen={handleOpen}
+                    handleClose={handleClose}
+                  />
+                ) : (
+                  <HeaderModal
+                    handleOpen={handleOpen}
+                    handleClose={handleClose}
+                  />
+                )}
+                {open === false ? <HeaderForm /> : ""}
+                <Section />
+                <Tower />
+                <Busines />
+                <Layouts />
+                <Gallery />
+                <Company />
+                <Partner />
+                <Contact />
+              </>
+            }
+          />
+          <Route
+            path="/layout/:id"
+            element={
+              <>
+                {open1 === false ? (
+                  <LayoutList
+                    open={open1}
+                    handleOpen={handleOpen1}
+                    handleClose={handleClose1}
+                  />
+                ) : (
+                  <HeaderModal
+                    handleOpen={handleOpen1}
+                    handleClose={handleClose1}
+                  />
+                )}
+              </>
+            }
+          />
+          <Route
+            path="/layout-about/:id"
+            element={
+              <>
+                {open1 === false ? (
+                  <LayoutAbout
+                    open={open1}
+                    handleOpen={handleOpen1}
+                    handleClose={handleClose1}
+                  />
+                ) : (
+                  <HeaderModal
+                    handleOpen={handleOpen1}
+                    handleClose={handleClose1}
+                  />
+                )}
+              </>
+            }
+          />
+        </Routes>
+      </div> */}
     </>
   );
 }
