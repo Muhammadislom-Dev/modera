@@ -64,7 +64,7 @@ function Layouts() {
               <Link
                 key={evt.id}
                 className="layoutsLink"
-                to={`/layout/${evt?.id}`}>
+                to={`/layout-about/${evt?.id}`}>
                 {evt[`name_${i18next.language}`]}
               </Link>
             ))}

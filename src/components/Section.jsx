@@ -29,7 +29,7 @@ function Section() {
                   <CountUp start={0} duration={2.75} end="96" delay={0} />
                 )}
               </h3>
-              <p>m</p>
+              <p>{t("metr")}</p>
             </div>
             <div className="sectionItem">
               <h3 className="sectionName">

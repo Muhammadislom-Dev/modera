@@ -88,7 +88,7 @@ function App() {
               </>
             }
           />
-          <Route
+          {/* <Route
             path="/layout/:id"
             element={
               <>
@@ -106,7 +106,7 @@ function App() {
                 )}
               </>
             }
-          />
+          /> */}
           <Route
             path="/layout-about/:id"
             element={

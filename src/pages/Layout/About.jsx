@@ -11,60 +11,70 @@ function About() {
   const [layout, setLayout] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`https://modera.dipsag.uz/layout/${id}`)
-      .then((res) => setLayout(res.data));
+    axios.get("https://modera.dipsag.uz/layout/").then((res) => {
+      console.log(res);
+      setLayout(res.data.filter((evt) => evt.apartment === Number(id)));
+    });
   }, [id]);
+
+  console.log(layout);
 
   return (
     <div className="about">
       <div className="container">
-        <div className="aboutList">
-          <Fade>
-            <div className="aboutLeft">
-              <img src={layout.image1} alt="" className="layoutsIcon" />
-            </div>
-          </Fade>
-          <Fade right>
-            <div className="aboutRight">
-              <div className="aboutTop">
-                <h3>{layout.name}</h3>
-                <span>
-                  <p>Hall</p>
-                  <p>
-                    {layout.hall} m<sup style={{ fontSize: "16px" }}>2</sup>
-                  </p>
-                </span>
-                <span>
-                  <p>Bedroom</p>
-                  <p>
-                    {layout.bedroom} m<sup style={{ fontSize: "16px" }}>2</sup>
-                  </p>
-                </span>
-                <span>
-                  <p>Hallway</p>
-                  <p>
-                    {layout.hallway} m<sup style={{ fontSize: "16px" }}>2</sup>
-                  </p>
-                </span>
-                <span style={{ marginBottom: "10px" }}>
-                  <p>Bathroom</p>
-                  <p>
-                    {layout.bethroom} m<sup style={{ fontSize: "16px" }}>2</sup>
-                  </p>
-                </span>
+        {layout.map((evt, index) => (
+          <div className="aboutList">
+            <Fade>
+              <div className="aboutLeft">
+                <img src={evt.image1} alt="" className="layoutsIcon" />
               </div>
-              <div className="aboutBottom">
-                <div className="aboutItem">
-                  <img src={layout.image2} alt="" className="aboutIcon" />
+            </Fade>
+            <Fade right>
+              <div className="aboutRight">
+                <div className="aboutTop">
+                  <h3>{evt.name}</h3>
+                  <span>
+                    <p>Студия</p>
+                    <p>
+                      {evt.hall} m<sup style={{ fontSize: "16px" }}>2</sup>
+                    </p>
+                  </span>
+                  <span>
+                    <p>Прихожая</p>
+                    <p>
+                      {evt.bedroom} m<sup style={{ fontSize: "16px" }}>2</sup>
+                    </p>
+                  </span>
+                  <span>
+                    <p>Санузел</p>
+                    <p>
+                      {evt.hallway} m<sup style={{ fontSize: "16px" }}>2</sup>
+                    </p>
+                  </span>
+                  {evt.bethroom == "0" ? (
+                    ""
+                  ) : (
+                    <span style={{ marginBottom: "10px" }}>
+                      <p>Спальня</p>
+                      <p>
+                        {evt.bethroom} m
+                        <sup style={{ fontSize: "16px" }}>2</sup>
+                      </p>
+                    </span>
+                  )}
                 </div>
-                <div className="aboutItem">
-                  <img src={layout.image3} alt="" className="aboutIcon" />
+                <div className="aboutBottom">
+                  <div className="aboutItem">
+                    <img src={evt.image2} alt="" className="aboutIcon" />
+                  </div>
+                  <div className="aboutItem">
+                    <img src={evt.image3} alt="" className="aboutIcon" />
+                  </div>
                 </div>
               </div>
-            </div>
-          </Fade>
-        </div>
+            </Fade>
+          </div>
+        ))}
       </div>
     </div>
   );
