@@ -19,7 +19,7 @@ function Tower() {
             </Fade>
             <Fade left cascade>
               <div className="towerTwo">
-                <p>21-23 rd {t("hello11")}</p>
+                <p>21-23  {t("hello11")}</p>
                 <h3>{t("hello13")}</h3>
               </div>
             </Fade>
@@ -49,13 +49,13 @@ function Tower() {
             </Fade>
             <Fade left cascade>
               <div className="towerSeven">
-                <p>1st {t("hello11")}</p>
+                <p>1 {t("hello11")}</p>
                 <h3>{t("hello18")}</h3>
               </div>
             </Fade>
             <Fade left cascade>
               <div className="towerEight">
-                <p>1st {t("hello11")}</p>
+                <p>1 {t("hello11")}</p>
                 <h3>{t("hello19")}</h3>
               </div>
             </Fade>
