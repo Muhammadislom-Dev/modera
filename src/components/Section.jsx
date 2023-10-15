@@ -34,7 +34,7 @@ function Section() {
             <div className="sectionItem">
               <h3 className="sectionName">
                 {count && (
-                  <CountUp start={0} duration={2.75} end="5" delay={0} />
+                  <CountUp start={0} duration={2.75} end="16" delay={0} />
                 )}
               </h3>
               <p>
@@ -44,7 +44,7 @@ function Section() {
             <div className="sectionItem">
               <h3 className="sectionName">
                 {count && (
-                  <CountUp start={0} duration={2.75} end="6" delay={0} />
+                  <CountUp start={0} duration={2.75} end="242" delay={0} />
                 )}
               </h3>
               <p>

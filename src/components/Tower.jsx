@@ -13,7 +13,7 @@ function Tower() {
           <div className="towerList">
             <Fade left cascade>
               <div className="towerOne">
-                <p>24 th {t("hello11")}</p>
+                <p>24  {t("hello11")}</p>
                 <h3>{t("hello12")}</h3>
               </div>
             </Fade>
@@ -25,25 +25,25 @@ function Tower() {
             </Fade>
             <Fade left cascade>
               <div className="towerThree">
-                <p>7-20 th {t("hello11")}</p>
+                <p>7-20 {t("hello11")}</p>
                 <h3>{t("hello14")}</h3>
               </div>
             </Fade>
             <Fade left cascade>
               <div className="towerFour">
-                <p>6th {t("hello11")}</p>
+                <p>6 {t("hello11")}</p>
                 <h3>{t("hello15")}</h3>
               </div>
             </Fade>
             <Fade left cascade>
               <div className="towerFive">
-                <p>5th {t("hello11")}</p>
+                <p>5 {t("hello11")}</p>
                 <h3>{t("hello16")}</h3>
               </div>
             </Fade>
             <Fade left cascade>
               <div className="towerSix">
-                <p>2-4th {t("hello11")}</p>
+                <p>2-4 {t("hello11")}</p>
                 <h3>{t("hello17")} </h3>
               </div>
             </Fade>
