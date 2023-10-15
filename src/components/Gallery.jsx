@@ -47,7 +47,6 @@ function Gallery() {
       <div id="offer" className="gallery">
         <div className="container">
           <h1 className="galleryName">
-            {/* {t("offers")}{" "} */}
             {t("offers")
               .split("")
               .map((char, index) => (

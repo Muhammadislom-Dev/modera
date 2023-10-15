@@ -122,7 +122,7 @@ function Busines() {
                     style={{ display: "flex" }}
                     className="businesName">
                     {evt[`title_${i18next.language}`]
-                      .split("")
+                      .split(" ")
                       .map((char, index) => (
                         <span
                           ref={(el) => {
