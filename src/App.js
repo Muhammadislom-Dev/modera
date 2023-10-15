@@ -56,8 +56,8 @@ function App() {
 
   return (
     <>
-      {/* {loader && <Loader />} */}
-      {/* <div className="App">
+      {loader && <Loader />}
+      <div className="App">
         <ToastContainer />
         <Routes>
           <Route
@@ -127,7 +127,7 @@ function App() {
             }
           />
         </Routes>
-      </div> */}
+      </div>
     </>
   );
 }
