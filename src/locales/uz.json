@@ -2,8 +2,8 @@
   "companyText": "Modera Towers koʻp funksiyali majmua boʻlib, unda turar joy koʻchmas mulki, biznes markazi, mehmonxona, savdo maydonchasi va uning aholisi uchun qulay hayot kechirish uchun zarur boʻlgan barcha narsalarni birlashtirgan. Majmua poytaxtning eng gavjum ko'chalaridan birida, Drujba bog'i va boshqa ko'plab diqqatga sazovor joylardan unchalik uzoq bo'lmagan joyda joylashgan. Modera Towers - bu o'z vaqti haqida qayg'uradiganlar uchun yechim, chunki kvartiralarni sotib olish orqali siz o'zingiz uchun qulay o'lchamdagi ofis maydonini ham sotib olishingiz yoki ijaraga olishingiz mumkin.",
   "contact": "Kontaktlar",
   "offers": "TAKLIFLAR",
-  "complex": "murakkab",
-  "functional": "funktsional",
+  "complex": "komplex",
+  "functional": "funktsionallik",
   "multi": "ko'p",
   "form": "Mutaxassis BILAN MASLAHAT",
   "send": "YUBORISH",
@@ -20,10 +20,10 @@
   "hello4": "Spetsifikatsiya",
   "hello5": "Aloqa qiling",
   "hello6": "Qavatlar",
-  "hello7": "baland",
-  "hello8": "ors",
-  "hello9": "penthou",
-  "hello10": "terasli ses",
+  "hello7": "tezkor OTIS",
+  "hello8": "lifti",
+  "hello9": "Avtomobil",
+  "hello10": "turargohlari",
   "hello11": "qavat",
   "hello12": "Terasli penthauslar",
   "hello13": "Pentxauslar",
@@ -34,5 +34,5 @@
   "hello18": "Lobbi",
   "hello19": "Tijorat zonasi",
   "hello20": "MX CODING tomonidan ishlab chiqilgan  +998 90 169 35 27",
-  "metr":"metr"
+  "metr": "metr"
 }

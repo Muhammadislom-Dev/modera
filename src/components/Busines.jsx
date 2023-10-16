@@ -86,7 +86,7 @@ function Busines() {
                   style={{ display: "flex" }}
                   className="businesName">
                   {evt[`title_${i18next.language}`]
-                    .split("")
+                    .split("  ")
                     .map((char, index) => (
                       <span
                         ref={(el) => {
@@ -113,13 +113,14 @@ function Busines() {
               <div key={evt.id}>
                 <img src={evt.img} alt="" />
                 <div className="busines-items">
+                 
                   <h2
                     ref={(el) => {
                       if (el) {
                         businesNameRefs.push(el);
                       }
                     }}
-                    style={{ display: "flex" }}
+                    style={{ display: "flex", gap: "0 5px" }}
                     className="businesName">
                     {evt[`title_${i18next.language}`]
                       .split(" ")

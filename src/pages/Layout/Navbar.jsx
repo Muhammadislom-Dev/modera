@@ -20,7 +20,7 @@ function Navbar({ open, handleOpen, handleClose }) {
             <a href="tel:+998940007777" className="navbarLink">
               +99894 000 7777
             </a>
-            <Language />
+            {/* <Language />
             {open === false ? (
               <button onClick={handleOpen} className="navbarButton">
                 <h4>{t("menu")}</h4>
@@ -60,7 +60,7 @@ function Navbar({ open, handleOpen, handleClose }) {
                   />
                 </svg>
               </button>
-            )}
+            )} */}
           </div>
         </div>
       </div>
