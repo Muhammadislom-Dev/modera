@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import styles from "./Layout.module.css";
 import { toast } from "react-toastify";
 import "./style.css";
+import { useTranslation } from "react-i18next";
 
 function Form() {
+  const { t } = useTranslation();
   const [nameValue, setNameValue] = useState("");
   const [numberValue, setNumberValue] = useState("");
   const [, setInvalidName] = useState(false);
