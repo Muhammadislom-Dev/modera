@@ -21,6 +21,7 @@ import AOS from "aos";
 import { TypeAnimation } from "react-type-animation";
 import "aos/dist/aos.css";
 import "./components/animation.css";
+import Footer from "./components/Footer";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -127,6 +128,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
       </div>
     </>
   );

@@ -279,6 +279,7 @@
   }
   .partnerIcon {
     width: 150px !important;
+    object-fit: contain;
   }
   .layoutsImage {
     width: 600px !important;
@@ -329,7 +330,7 @@
   }
   .partnerIcon {
     width: 120px !important;
-    object-fit: cover !important;
+    object-fit: contain !important;
     height: 35px !important;
   }
   body .headerFormName {
