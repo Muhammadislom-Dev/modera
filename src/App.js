@@ -22,6 +22,7 @@ import { TypeAnimation } from "react-type-animation";
 import "aos/dist/aos.css";
 import "./components/animation.css";
 import Footer from "./components/Footer";
+import Timeout from "./components/Timeout";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -86,6 +87,7 @@ function App() {
                 <Company />
                 <Partner />
                 <Contact />
+                <Timeout />
               </>
             }
           />
