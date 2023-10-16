@@ -20,10 +20,10 @@
   "hello4": "Specification",
   "hello5": "Get in touch",
   "hello6": "Floors",
-  "hello7": "elevat",
-  "hello8": "ors",
-  "hello9": "penthou",
-  "hello10": "ses with terrace",
+  "hello7": "quickly OTIS",
+  "hello8": "elevator",
+  "hello9": "CAR",
+  "hello10": "parking",
   "hello11": "floor",
   "hello12": "Penthouses with terrace",
   "hello13": "Penthouses",
@@ -34,5 +34,7 @@
   "hello18": "Lobby",
   "hello19": "Commercial zone",
   "hello20": "Developed by MX CODING c +998 90 169 35 27",
-  "metr":"метр"
+  "metr":"metre",
+  "name":"Your Name",
+  "number":"Your number"
 }
