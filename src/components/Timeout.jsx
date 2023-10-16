@@ -105,7 +105,6 @@ function Timeout() {
               type="text"
               placeholder={t("name")}
               className="modal-input"
-              required
             />
             <input
               value={numberValue}
@@ -113,7 +112,6 @@ function Timeout() {
               type="number"
               placeholder={t("number")}
               className="modal-input"
-              required
             />
             <button
               type="submit"
