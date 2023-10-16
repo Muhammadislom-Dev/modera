@@ -64,6 +64,7 @@ function Timeout() {
         }
       ).then(
         (success) => {
+          handleClose();
           toast.success("Sizning xabaringiz muvaffaqiyatli yuborildi!");
         },
         (error) => {}
