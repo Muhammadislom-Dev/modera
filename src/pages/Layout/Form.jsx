@@ -58,7 +58,7 @@ function Form() {
             onChange={(e) => changeName(e.target.value)}
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder={t("name")}
             required
             className="formInput"
           />
@@ -67,7 +67,7 @@ function Form() {
             onChange={(e) => changeNumber(e.target.value)}
             type="number"
             name="tel"
-            placeholder="Your number"
+            placeholder={t("number")}
             required
             className="formInput"
           />
