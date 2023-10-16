@@ -916,6 +916,8 @@
   }
   .contactList {
     display: block !important;
+    min-width: 75%;
+    width: 75%;
   }
   .contactList a {
     margin: 0 5.6px;
@@ -965,5 +967,9 @@
 
   .section {
     padding-bottom: 70px !important;
+  }
+  .contactList svg {
+    width: 40px;
+    height: 40px;
   }
 }
