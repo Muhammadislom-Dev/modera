@@ -19,11 +19,22 @@
   font-family: sans-serif;
   text-align: center;
   color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-list {
   display: flex;
   align-items: center;
   gap: 15px 30px;
-  margin-top: 25px;
+  padding: 25px 0;
+  justify-content: center;
+}
+
+.footer-links {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f1f1;
+  font-weight: 400;
 }

@@ -830,9 +830,11 @@
     left: 5% !important;
     margin: 0 auto !important;
     text-align: center;
+    display: none !important;
   }
   .menuLogo {
     height: 500px !important;
+    display:none !important;
   }
   .contactImage {
     width: 98% !important;
@@ -916,9 +918,10 @@
     display: none !important;
   }
   .contactList {
-    display: block !important;
+    /* display: block !important; */
     min-width: 75%;
     width: 75%;
+    display: none !important;
   }
   .contactList a {
     margin: 0 5.6px;
