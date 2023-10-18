@@ -185,7 +185,7 @@ export const data = [
   },
   {
     id: 14,
-    title_ru: "крытый бассейн",
+    title_ru: "закрытый бассейн",
     title_uz: "yopiq basseyn",
     title_en: "indoor pool",
     text_ru: "Modera Towers предлагает крытый бассейн на шестом этаже.",
