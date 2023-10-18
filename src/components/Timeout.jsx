@@ -12,8 +12,8 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "37.5rem",
-  bgcolor: "#F9F0EC",
-  borderColor: "#F9F0EC",
+  bgcolor: "#Fff",
+  borderColor: "#Ffff",
   padding: "3.5rem",
   textAlign: "center",
 };
@@ -128,7 +128,7 @@ function Timeout() {
                   cy="39.5"
                   r="39.5"
                   transform="matrix(-1 0 0 1 79 0)"
-                  fill="#AC835E"></circle>
+                  fill="#291844"></circle>
                 <path
                   d="M48 47C48 42.8579 51.4528 39.5 55 39.5M55 39.5C51.4528 39.5 48 36.1421 48 32M55 39.5L24 39.5"
                   stroke="white"></path>
