@@ -306,6 +306,27 @@
 .headerFormName span:nth-child(30) {
   animation-delay: 3.2s;
 }
+.headerFormName span:nth-child(31) {
+  animation-delay: 3.3s;
+}
+.headerFormName span:nth-child(32) {
+  animation-delay: 3.4s;
+}
+.headerFormName span:nth-child(33) {
+  animation-delay: 3.5s;
+}
+.headerFormName span:nth-child(34) {
+  animation-delay: 3.6s;
+}
+.headerFormName span:nth-child(35) {
+  animation-delay: 3.7s;
+}
+.headerFormName span:nth-child(36) {
+  animation-delay: 3.8s;
+}
+.headerFormName span:nth-child(37) {
+  animation-delay: 3.9s;
+}
 
 @keyframes animateSP3 {
   0% {
