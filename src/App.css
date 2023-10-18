@@ -447,7 +447,7 @@
   .companyImage {
     width: 100% !important;
     transform: translateX(0) !important;
-    height: 500px !important;
+    height: auto !important;
   }
 
   .headermodal h2 {
@@ -976,5 +976,17 @@
   .contactList svg {
     width: 40px;
     height: 40px;
+  }
+  .contact{
+    padding-top: 50px !important;
+    min-height: 450px !important;
+    height: 400px !important;
+  }
+  .footer-link{
+    font-size: 40px !important;
+    margin-top: 0;
+  }
+  .contactName{
+    padding-bottom: 25px !important;
   }
 }
