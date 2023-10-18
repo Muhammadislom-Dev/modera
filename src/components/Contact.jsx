@@ -374,7 +374,11 @@ function Contact() {
             <a href="tel:+998940007777" className="footer-link">
               +998 94 000 77 77
             </a>
-            <p className="footer-text">{t("location")}</p>
+            <p
+              style={{ textAlign: "center", color: "#fff", padding: "10px 0" }}
+              className="footer-text">
+              {t("location")}
+            </p>
             <div className="footer-list">
               <a
                 href="https://www.facebook.com/profile.php?id=61550525660613&mibextid=LQQJ4d"
