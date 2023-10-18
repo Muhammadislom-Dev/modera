@@ -33,24 +33,56 @@ function About() {
               <div className="aboutRight">
                 <div className="aboutTop">
                   <h3>{evt.name}</h3>
-                  <span>
-                    <p>Студия</p>
-                    <p>
-                      {evt.hall} m<sup style={{ fontSize: "16px" }}>2</sup>
-                    </p>
-                  </span>
-                  <span>
-                    <p>Прихожая</p>
-                    <p>
-                      {evt.bedroom} m<sup style={{ fontSize: "16px" }}>2</sup>
-                    </p>
-                  </span>
-                  <span>
-                    <p>Санузел</p>
-                    <p>
-                      {evt.hallway} m<sup style={{ fontSize: "16px" }}>2</sup>
-                    </p>
-                  </span>
+                  {evt.polya2 == "0" ? (
+                    ""
+                  ) : (
+                    <span>
+                      <p>Терраса</p>
+                      <p>
+                        {evt.polya2} m<sup style={{ fontSize: "16px" }}>2</sup>
+                      </p>
+                    </span>
+                  )}
+                  {evt.hall == "0" ? (
+                    ""
+                  ) : (
+                    <span>
+                      <p>Студия</p>
+                      <p>
+                        {evt.hall} m<sup style={{ fontSize: "16px" }}>2</sup>
+                      </p>
+                    </span>
+                  )}
+                  {evt.polya1 == "0" ? (
+                    ""
+                  ) : (
+                    <span>
+                      <p>Кухня</p>
+                      <p>
+                        {evt.polya1} m<sup style={{ fontSize: "16px" }}>2</sup>
+                      </p>
+                    </span>
+                  )}
+                  {evt.bedroom == "0" ? (
+                    ""
+                  ) : (
+                    <span>
+                      <p>Прихожая</p>
+                      <p>
+                        {evt.bedroom} m<sup style={{ fontSize: "16px" }}>2</sup>
+                      </p>
+                    </span>
+                  )}
+                  {evt.hallway == "0" ? (
+                    ""
+                  ) : (
+                    <span>
+                      <p>Санузел</p>
+                      <p>
+                        {evt.hallway} m<sup style={{ fontSize: "16px" }}>2</sup>
+                      </p>
+                    </span>
+                  )}
                   {evt.bethroom == "0" ? (
                     ""
                   ) : (
@@ -65,10 +97,10 @@ function About() {
                 </div>
                 <div className="aboutBottom">
                   <div className="aboutItem">
-                    <img src={evt.image2} alt="" className="aboutIcon" />
+                    <img src={evt.image1} alt="" className="aboutIcon" />
                   </div>
                   <div className="aboutItem">
-                    <img src={evt.image3} alt="" className="aboutIcon" />
+                    <img src={evt.image1} alt="" className="aboutIcon" />
                   </div>
                 </div>
               </div>
