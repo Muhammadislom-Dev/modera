@@ -834,7 +834,7 @@
   }
   .menuLogo {
     height: 500px !important;
-    display:none !important;
+    display: none !important;
   }
   .contactImage {
     width: 98% !important;
@@ -843,6 +843,7 @@
   .galleryName,
   .contactName {
     font-size: 45px !important;
+    justify-content: center !important;
   }
   .custom-dropdown-menu {
     top: 5.5% !important;
