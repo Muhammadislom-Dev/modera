@@ -374,10 +374,7 @@ function Contact() {
             <a href="tel:+998940007777" className="footer-link">
               +998 94 000 77 77
             </a>
-            {/* <p className="footer-text">
-          ПРЕЗЕНТАЦИОННЫЙ ОФИС: 5-Й ПРОЕЗД НИЁЗБЕК ЙУЛИ, 29А (ОРИЕНТИР: АЛАЙСКИЙ
-          РЫНОК)
-        </p> */}
+            <p className="footer-text">{t("location")}</p>
             <div className="footer-list">
               <a
                 href="https://www.facebook.com/profile.php?id=61550525660613&mibextid=LQQJ4d"
