@@ -95,6 +95,9 @@
 .galleryName span:nth-child(8) {
   animation-delay: 1.9s;
 }
+.galleryName span:nth-child(9) {
+  animation-delay: 1.9s;
+}
 
 @keyframes animateSP1 {
   0% {
