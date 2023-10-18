@@ -979,11 +979,12 @@
   }
   .contact{
     padding-top: 50px !important;
-    min-height: 450px !important;
-    height: 400px !important;
+    /* min-height: 450px !important; */
+    /* height: 400px !important; */
   }
   .footer-link{
     font-size: 40px !important;
+    padding-bottom: 50px !important;
     margin-top: 0;
   }
   .contactName{
