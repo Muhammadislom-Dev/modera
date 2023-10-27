@@ -777,7 +777,7 @@
 .headermodal h1 {
   color: #fff;
   font-family: Vocal, sans-serif;
-  font-size: 128px;
+  font-size: 100px;
   font-style: normal;
   font-weight: 800;
   line-height: 92.5%;
@@ -787,7 +787,7 @@
 .headermodal h2 {
   color: #fff;
   font-family: Vocal, sans-serif;
-  font-size: 128px;
+  font-size: 100px;
   font-style: normal;
   font-weight: 800;
   line-height: 92.5%;
@@ -798,16 +798,16 @@
   bottom: 50px;
   display: flex;
   justify-content: space-between;
-  gap: 120px;
+  gap: 60px;
 }
 
 .headerModalItem {
-  border-radius: 50px;
+  border-radius: 40px;
   background: #fff;
   width: 566px;
-  height: 540px;
-  padding: 80px;
-  margin-top: 130px;
+  height: 400px;
+  padding: 40px;
+  margin-top: 220px;
 }
 
 .headerModalItem h4 {
@@ -837,6 +837,6 @@
   flex-direction: column;
   gap: 15px;
   border-right: 2px solid #2a1844;
-  padding-top: 150px;
+  padding-top:40px;
   padding-right: 34px;
 }
