@@ -91,25 +91,7 @@ function App() {
               </>
             }
           />
-          {/* <Route
-            path="/layout/:id"
-            element={
-              <>
-                {open1 === false ? (
-                  <LayoutList
-                    open={open1}
-                    handleOpen={handleOpen1}
-                    handleClose={handleClose1}
-                  />
-                ) : (
-                  <HeaderModal
-                    handleOpen={handleOpen1}
-                    handleClose={handleClose1}
-                  />
-                )}
-              </>
-            }
-          /> */}
+
           <Route
             path="/layout-about/:id"
             element={
@@ -130,7 +112,6 @@ function App() {
             }
           />
         </Routes>
-        {/* <Footer /> */}
       </div>
     </>
   );

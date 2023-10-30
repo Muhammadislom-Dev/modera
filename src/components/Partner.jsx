@@ -7,8 +7,10 @@ import Asset5 from "../assets/Asset 5.svg";
 import Asset6 from "../assets/Asset 6.svg";
 import "./style.css";
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 
 function Partner() {
+  const { t } = useTranslation();
   var settings = {
     speed: 5000,
     dots: false,
@@ -36,6 +38,9 @@ function Partner() {
   };
   return (
     <div id="specification" className="partner">
+      <div className="container">
+        <h1 className="partnerName">{t("partner")}</h1>
+      </div>
       <div className="container container-fluids">
         <Slider {...settings}>
           <img src={Asset1} alt="Icon 1" className="partnerIcon" />

@@ -23,7 +23,7 @@
   "hello7": "tezkor OTIS",
   "hello8": "liftlari",
   "hello9": "Avtomobil",
-  "hello10": "turargohlari",
+  "hello10": "ta turargohlari",
   "hello11": "qavat",
   "hello12": "Terasli penthauslar",
   "hello13": "Pentxauslar",
@@ -39,5 +39,6 @@
   "number": "Telefon raqamingiz",
   "time1": "QAYTA QO'NG'IROQ",
   "time2": "Kontakt ma'lumotlaringizni qoldiring va biz siz bilan bog'lanamiz.",
-  "location": "st. Shota Rustaveli, 19, 2, Toshkent, O‘zbekiston (mo‘ljal: “Rossiya” mehmonxonasi)"
+  "location": "st. Shota Rustaveli, 19, 2, Toshkent, O‘zbekiston (mo‘ljal: “Rossiya” mehmonxonasi)",
+  "partner":"ASOSIY HAMKORLARIMIZ"
 }

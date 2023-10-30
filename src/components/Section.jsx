@@ -18,7 +18,7 @@ function Section() {
             <div className="sectionItem">
               <h3 className="sectionName">
                 {count && (
-                  <CountUp start={0} duration={2.75} end="24" delay={0} />
+                  <CountUp start={0} duration={2.75} end="25" delay={0} />
                 )}
               </h3>
               <p>{t("hello6")}</p>
@@ -26,7 +26,7 @@ function Section() {
             <div className="sectionItem">
               <h3 className="sectionName">
                 {count && (
-                  <CountUp start={0} duration={2.75} end="96" delay={0} />
+                  <CountUp start={0} duration={2.75} end="101" delay={0} />
                 )}
               </h3>
               <p>{t("metr")}</p>
@@ -42,13 +42,15 @@ function Section() {
               </p>
             </div>
             <div className="sectionItem">
-              <h3 className="sectionName">
-                {count && (
-                  <CountUp start={0} duration={2.75} end="242" delay={0} />
-                )}
-              </h3>
               <p>
-                {t("hello9")} <br /> {t("hello10")}
+                {t("hello9")}
+                <h3 className="sectionName sectionNameTop">
+                  {count && (
+                    <CountUp start={0} duration={2.75} end="242" delay={0} />
+                  )}
+                </h3>
+                <br />
+                {t("hello10")}
               </p>
             </div>
           </div>
